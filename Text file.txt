@@ -1,3 +1,5 @@
+Mood Detector API - Tesseract, Opencv, Emgucv ir kazkoks panasiu pavadinimu asiarface(???) 
+
 Projekto idejos:
 
 -Mood diary/ asmeninis psichologas. Pirma foto zmogus pasidaro ryte (prikeliamas
