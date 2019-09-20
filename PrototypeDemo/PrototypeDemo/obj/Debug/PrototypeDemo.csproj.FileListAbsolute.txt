@@ -1,0 +1,9 @@
+C:\Users\Mantas\Desktop\PrototypeDemo\PrototypeDemo\bin\Debug\PrototypeDemo.exe.config
+C:\Users\Mantas\Desktop\PrototypeDemo\PrototypeDemo\bin\Debug\PrototypeDemo.exe
+C:\Users\Mantas\Desktop\PrototypeDemo\PrototypeDemo\bin\Debug\PrototypeDemo.pdb
+C:\Users\Mantas\Desktop\PrototypeDemo\PrototypeDemo\obj\Debug\PrototypeDemo.csprojResolveAssemblyReference.cache
+C:\Users\Mantas\Desktop\PrototypeDemo\PrototypeDemo\obj\Debug\PrototypeDemo.Form1.resources
+C:\Users\Mantas\Desktop\PrototypeDemo\PrototypeDemo\obj\Debug\PrototypeDemo.Properties.Resources.resources
+C:\Users\Mantas\Desktop\PrototypeDemo\PrototypeDemo\obj\Debug\PrototypeDemo.csproj.GenerateResource.Cache
+C:\Users\Mantas\Desktop\PrototypeDemo\PrototypeDemo\obj\Debug\PrototypeDemo.exe
+C:\Users\Mantas\Desktop\PrototypeDemo\PrototypeDemo\obj\Debug\PrototypeDemo.pdb
