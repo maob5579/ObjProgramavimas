@@ -1,1 +1,14 @@
-Projekto git'as
+Projekto idejos:
+
+-Mood diary/ asmeninis psichologas. Pirma foto zmogus pasidaro ryte (prikeliamas
+appsas), paskui kas valanda(?) i telefona ateina priminimas nusifotografuoti.
+Darant foto, zmogus paraso ka veike ta valanda - sudaroma statistika, kokia veikla
+uzsiimant zmogus liudnas, linksmas, ect. Pries miega uzdedamas tickas, kad zmogus eina
+miegoti - appsas uzmiega. 
+
+-Emociju zaidimas. Zmogui pateikiama emocija, kuria jis turi nufotografuoti.
+Statistiskai rodo, kiek procentu zmogus perteike ta emocija. Galima sieti kaip 
+zaidima dviem - kitas zmogus speja kiek procentu surinko pirmasis ir panasiai.
+
+-FoodMood. Maisto skonio ivertinimas padarant foto. Galima ideti aptarnavimo kokybes,
+kainos zvaigzdutes. Sudaroma restoranu statistika pagal kiekviena punkta. 
