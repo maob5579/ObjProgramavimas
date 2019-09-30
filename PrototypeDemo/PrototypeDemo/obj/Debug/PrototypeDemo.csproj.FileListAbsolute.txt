@@ -7,3 +7,6 @@ C:\Users\Mantas\Desktop\PrototypeDemo\PrototypeDemo\obj\Debug\PrototypeDemo.Prop
 C:\Users\Mantas\Desktop\PrototypeDemo\PrototypeDemo\obj\Debug\PrototypeDemo.csproj.GenerateResource.Cache
 C:\Users\Mantas\Desktop\PrototypeDemo\PrototypeDemo\obj\Debug\PrototypeDemo.exe
 C:\Users\Mantas\Desktop\PrototypeDemo\PrototypeDemo\obj\Debug\PrototypeDemo.pdb
+C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\PrototypeDemo\bin\Debug\PrototypeDemo.exe.config
+C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\PrototypeDemo\obj\Debug\PrototypeDemo.exe
+C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\PrototypeDemo\obj\Debug\PrototypeDemo.pdb

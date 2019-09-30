@@ -16,5 +16,10 @@ namespace PrototypeDemo
         {
             InitializeComponent();
         }
+
+        private void btnMeasure_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
