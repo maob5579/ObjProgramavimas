@@ -14,8 +14,8 @@ C:\Users\halka\Desktop\moodfull\PrototypeDemo\LoginHandling\bin\Debug\System.Dat
 C:\Users\halka\Desktop\moodfull\PrototypeDemo\LoginHandling\bin\Debug\System.Data.SQLite.dll.config
 C:\Users\halka\Desktop\moodfull\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.MainWindow.resources
 C:\Users\halka\Desktop\moodfull\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.csproj.CopyComplete
-C:\Users\halka\Desktop\moodfull\PrototypeDemo\LoginHandling\bin\Debug\bin\Debug\LoginDataBase.sqlite3
 C:\Users\halka\Desktop\moodfull\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.RegisterWindow.resources
+<<<<<<< HEAD
 C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.csprojResolveAssemblyReference.cache
 C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.RegisterWindow.resources
 C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.MainWindow.resources
@@ -30,3 +30,6 @@ C:\Users\Administratorius\Documents\ObjProgramavimas\PrototypeDemo\LoginHandling
 C:\Users\Administratorius\Documents\ObjProgramavimas\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.Properties.Resources.resources
 C:\Users\Administratorius\Documents\ObjProgramavimas\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.csproj.GenerateResource.cache
 C:\Users\Administratorius\Documents\ObjProgramavimas\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.csproj.CoreCompileInputs.cache
+=======
+C:\Users\halka\Desktop\moodfull\PrototypeDemo\LoginHandling\bin\Debug\bin\Debug\MoodfullDataBase.sqlite3
+>>>>>>> 8ce0b1c985a996fd1eaee00eaa2aeb5365611f1f
