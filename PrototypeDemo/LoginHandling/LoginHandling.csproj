@@ -81,6 +81,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminWindow.resx">
+      <DependentUpon>AdminWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegisterWindow.resx">
       <DependentUpon>RegisterWindow.cs</DependentUpon>
     </EmbeddedResource>
