@@ -23,3 +23,10 @@ C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\obj\Debu
 C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.Properties.Resources.resources
 C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.csproj.GenerateResource.Cache
 C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\bin\Debug\LoginHandling.exe.config
+C:\Users\Administratorius\Documents\ObjProgramavimas\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.csprojAssemblyReference.cache
+C:\Users\Administratorius\Documents\ObjProgramavimas\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.RegisterWindow.resources
+C:\Users\Administratorius\Documents\ObjProgramavimas\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.MainWindow.resources
+C:\Users\Administratorius\Documents\ObjProgramavimas\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.StartWindow.resources
+C:\Users\Administratorius\Documents\ObjProgramavimas\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.Properties.Resources.resources
+C:\Users\Administratorius\Documents\ObjProgramavimas\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.csproj.GenerateResource.cache
+C:\Users\Administratorius\Documents\ObjProgramavimas\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.csproj.CoreCompileInputs.cache
