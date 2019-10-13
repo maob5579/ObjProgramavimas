@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LoginHandling
+namespace PrototypeDemo
 {
-    public partial class AdminWindow : Form
+    public partial class OwnerForm : Form
     {
-        public AdminWindow()
+        public OwnerForm()
         {
             InitializeComponent();
         }

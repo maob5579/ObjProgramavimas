@@ -107,10 +107,5 @@ namespace LoginHandling
         {
 
         }
-
-        private void RegisterWindow_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

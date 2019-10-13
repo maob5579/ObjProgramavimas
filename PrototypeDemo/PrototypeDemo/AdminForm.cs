@@ -8,13 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LoginHandling
+namespace PrototypeDemo
 {
-    public partial class AdminWindow : Form
+    public partial class AdminForm : Form
     {
-        public AdminWindow()
+        public AdminForm()
         {
             InitializeComponent();
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

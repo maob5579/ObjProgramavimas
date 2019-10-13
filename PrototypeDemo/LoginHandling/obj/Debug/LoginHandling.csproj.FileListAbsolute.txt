@@ -16,10 +16,6 @@ C:\Users\halka\Desktop\moodfull\PrototypeDemo\LoginHandling\obj\Debug\LoginHandl
 C:\Users\halka\Desktop\moodfull\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.csproj.CopyComplete
 C:\Users\halka\Desktop\moodfull\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.RegisterWindow.resources
 <<<<<<< HEAD
-C:\Users\halka\Desktop\moodfull\PrototypeDemo\LoginHandling\bin\Debug\bin\Debug\MoodfullDataBase.sqlite3
-=======
-<<<<<<< HEAD
->>>>>>> Vezys
 C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.csprojResolveAssemblyReference.cache
 C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.RegisterWindow.resources
 C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.MainWindow.resources
@@ -27,20 +23,6 @@ C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\obj\Debu
 C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.Properties.Resources.resources
 C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.csproj.GenerateResource.Cache
 C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\bin\Debug\LoginHandling.exe.config
-<<<<<<< HEAD
-<<<<<<< HEAD
-C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\bin\Debug\bin\Debug\MoodfullDataBase.sqlite3
-C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\bin\Debug\x86\sqlite3.dll
-C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\bin\Debug\x64\sqlite3.dll
-C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\bin\Debug\LoginHandling.exe
-C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\bin\Debug\LoginHandling.pdb
-C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\bin\Debug\System.Data.SQLite.dll
-C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\bin\Debug\System.Data.SQLite.xml
-C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.exe
-C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.pdb
-=======
->>>>>>> parent of 4e84482... user/owner/admin forms
-=======
 C:\Users\Administratorius\Documents\ObjProgramavimas\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.csprojAssemblyReference.cache
 C:\Users\Administratorius\Documents\ObjProgramavimas\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.RegisterWindow.resources
 C:\Users\Administratorius\Documents\ObjProgramavimas\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.MainWindow.resources
@@ -51,4 +33,3 @@ C:\Users\Administratorius\Documents\ObjProgramavimas\PrototypeDemo\LoginHandling
 =======
 C:\Users\halka\Desktop\moodfull\PrototypeDemo\LoginHandling\bin\Debug\bin\Debug\MoodfullDataBase.sqlite3
 >>>>>>> 8ce0b1c985a996fd1eaee00eaa2aeb5365611f1f
->>>>>>> Vezys
