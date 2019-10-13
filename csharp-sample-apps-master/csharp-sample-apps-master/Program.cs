@@ -108,7 +108,7 @@ namespace csharp_sample_app
             detector.getDetectAge();
             detector.start();
            // System.Console.WriteLine("Face detector mode = " + detector.getFaceDetectorMode().ToString());
-            ((Affdex.PhotoDetector)detector).process(LoadFrameFromFile(@"C:\Users\Mantas\Desktop\how-to-be-happy.jpg"));
+            ((Affdex.PhotoDetector)detector).process(LoadFrameFromFile(@"C:\Users\Mantas\Desktop\6.jpg"));
 
             videoForm.ShowDialog();
             detector.stop();
