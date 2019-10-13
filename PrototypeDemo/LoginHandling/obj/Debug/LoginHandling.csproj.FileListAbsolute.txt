@@ -14,8 +14,8 @@ C:\Users\halka\Desktop\moodfull\PrototypeDemo\LoginHandling\bin\Debug\System.Dat
 C:\Users\halka\Desktop\moodfull\PrototypeDemo\LoginHandling\bin\Debug\System.Data.SQLite.dll.config
 C:\Users\halka\Desktop\moodfull\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.MainWindow.resources
 C:\Users\halka\Desktop\moodfull\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.csproj.CopyComplete
-C:\Users\halka\Desktop\moodfull\PrototypeDemo\LoginHandling\bin\Debug\bin\Debug\LoginDataBase.sqlite3
 C:\Users\halka\Desktop\moodfull\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.RegisterWindow.resources
+C:\Users\halka\Desktop\moodfull\PrototypeDemo\LoginHandling\bin\Debug\bin\Debug\MoodfullDataBase.sqlite3
 C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.csprojResolveAssemblyReference.cache
 C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.RegisterWindow.resources
 C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.MainWindow.resources

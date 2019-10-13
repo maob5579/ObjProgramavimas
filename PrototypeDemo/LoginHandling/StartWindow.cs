@@ -37,8 +37,9 @@ namespace LoginHandling
             }
             else
             {
-                string query = "SELECT * From Table_Login WHERE Username == @Username and Password == @Password";
-                SQLiteConnection sqlConnection = new SQLiteConnection("Data Source=LoginDataBase.sqlite3;Version=3;");
+                
+                string query = "SELECT * From User WHERE Username == @Username and Password == @Password";
+                SQLiteConnection sqlConnection = new SQLiteConnection("Data Source=MoodfullDataBase.sqlite3;Version=3;");
                 sqlConnection.Open();
                 SQLiteCommand sqlCommand = new SQLiteCommand(query, sqlConnection);
                 sqlCommand.Parameters.AddWithValue("@Username", textBox_Username.Text);
@@ -48,15 +49,30 @@ namespace LoginHandling
                 sqlDataAdapter.Fill(dataTable);
                 if (dataTable.Rows.Count > 0)
                 {
-                    this.Hide();
-                    var mainForm = new MainWindow();
-                    mainForm.Closed += (s, args) => this.Close();
-                    mainForm.Show();
+                    if (isAdmin(textBox_Username.Text, textBox_Password.Text))
+                    {
+                        sqlConnection.Close();
+                        this.Hide();
+                        var mainForm = new AdminWindow();
+                        mainForm.Closed += (s, args) => this.Close();
+                        mainForm.Show();
+                    }
+                    else
+                    {
+
+                        sqlConnection.Close();
+                        this.Hide();
+                        var mainForm = new MainWindow();
+                        mainForm.Closed += (s, args) => this.Close();
+                        mainForm.Show();
+
+                    }
 
                 }
 
                 else
                 {
+                    sqlConnection.Close();
                     MessageBox.Show("Login Failed");
                 }
 
@@ -66,12 +82,40 @@ namespace LoginHandling
             }
         }
 
+        private bool isAdmin (string username, string password)
+        {
+            string query = "SELECT UserType From User WHERE Username == @Username and Password == @Password and UserType == 1";
+            SQLiteConnection sqlConnection = new SQLiteConnection("Data Source=MoodfullDataBase.sqlite3;Version=3;");
+            sqlConnection.Open();
+            SQLiteCommand sqlCommand = new SQLiteCommand(query, sqlConnection);
+            sqlCommand.Parameters.AddWithValue("@Username", username);
+            sqlCommand.Parameters.AddWithValue("@Password", password);
+            SQLiteDataAdapter sqlDataAdapter = new SQLiteDataAdapter(sqlCommand);
+            DataTable dataTable = new DataTable();
+            sqlDataAdapter.Fill(dataTable);
+            if (dataTable.Rows.Count > 0)
+            {
+                sqlConnection.Close();
+                return true;
+            }
+            else
+            {
+                sqlConnection.Close();
+                return false;
+            }
+        }
+
         private void button_Register_Click(object sender, EventArgs e)
         {
             this.Hide();
             var regForm = new RegisterWindow();
             regForm.Closed += (s, args) => this.Close();
             regForm.Show();
+        }
+
+        private void textBox_Username_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
