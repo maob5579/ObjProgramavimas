@@ -16,5 +16,10 @@ namespace LoginHandling
         {
             InitializeComponent();
         }
+
+        private void MainWindow_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -14,6 +14,10 @@ namespace LoginHandling
 {
     public partial class StartWindow : Form
     {
+        SQLiteConnection sqlConnection;
+        SQLiteCommand sqlCommand;
+        SQLiteDataAdapter sqlDataAdapter;
+
         public StartWindow()
         {
             InitializeComponent();
@@ -21,6 +25,8 @@ namespace LoginHandling
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            int a = DataBase.GetUserID("a");
+            sqlConnection = new SQLiteConnection("Data Source=MoodfullDataBase.sqlite3;Version=3;");
 
         }
 
@@ -31,58 +37,39 @@ namespace LoginHandling
 
         private void button_SignIn_Click(object sender, EventArgs e)
         {
-            if(textBox_Username.Text.Trim() == "" && textBox_Password.Text.Trim() == "")
+            if (textBox_Username.Text.Trim() == "" && textBox_Password.Text.Trim() == "")
             {
                 MessageBox.Show("Enter username and password!");
+                return;
             }
-            else
-            {
-                
+       
                 string query = "SELECT * From User WHERE Username == @Username and Password == @Password";
-                SQLiteConnection sqlConnection = new SQLiteConnection("Data Source=MoodfullDataBase.sqlite3;Version=3;");
                 sqlConnection.Open();
-                SQLiteCommand sqlCommand = new SQLiteCommand(query, sqlConnection);
+                sqlCommand = new SQLiteCommand(query, sqlConnection);
                 sqlCommand.Parameters.AddWithValue("@Username", textBox_Username.Text);
                 sqlCommand.Parameters.AddWithValue("@Password", textBox_Password.Text);
-                SQLiteDataAdapter sqlDataAdapter = new SQLiteDataAdapter(sqlCommand);
+                sqlDataAdapter = new SQLiteDataAdapter(sqlCommand);
                 DataTable dataTable = new DataTable();
                 sqlDataAdapter.Fill(dataTable);
-                if (dataTable.Rows.Count > 0)
+
+            if (dataTable.Rows.Count>0)
+            {
+                switch (DataBase.GetUserID(textBox_Username.Text))
                 {
-                    if (isAdmin(textBox_Username.Text, textBox_Password.Text))
-                    {
-                        sqlConnection.Close();
-                        this.Hide();
-                        var mainForm = new AdminWindow();
-                        mainForm.Closed += (s, args) => this.Close();
-                        mainForm.Show();
-                    }
-                    else
-                    {
+                    case 1:
 
-                        sqlConnection.Close();
-                        this.Hide();
-                        var mainForm = new MainWindow();
-                        mainForm.Closed += (s, args) => this.Close();
-                        mainForm.Show();
-
-                    }
-
+                        break;
+                    default:
+                        break;
                 }
-
-                else
-                {
-                    sqlConnection.Close();
-                    MessageBox.Show("Login Failed");
-                }
-
-
 
 
             }
+         
+
         }
 
-        private bool isAdmin (string username, string password)
+        private bool isAdmin(string username, string password)
         {
             string query = "SELECT UserType From User WHERE Username == @Username and Password == @Password and UserType == 1";
             SQLiteConnection sqlConnection = new SQLiteConnection("Data Source=MoodfullDataBase.sqlite3;Version=3;");

@@ -42,7 +42,7 @@ namespace LoginHandling
             }
             else
             {
-                string query = "INSERT into User (Username,Password,FirstName,LastName,UserType) values(@Username,@Password,@FirstName,@LastName,0);";
+                string query = "INSERT into User (Username,Password,FirstName,LastName,UserType) values(@Username,@Password,@FirstName,@LastName,3);";
               
                 SQLiteConnection sqlConnection = new SQLiteConnection("Data Source=MoodfullDataBase.sqlite3;Version=3;");
                 sqlConnection.Open();

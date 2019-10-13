@@ -14,3 +14,4 @@ C:\Users\Mantas\Desktop\projektasObjektinio\PrototypeDemo\LoginHandling\obj\Debu
 C:\Users\Mantas\Desktop\projektasObjektinio\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.csproj.GenerateResource.Cache
 C:\Users\Mantas\Desktop\projektasObjektinio\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.exe
 C:\Users\Mantas\Desktop\projektasObjektinio\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.pdb
+C:\Users\Mantas\Desktop\projektasObjektinio\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.AdminWindow.resources

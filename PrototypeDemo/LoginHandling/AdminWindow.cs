@@ -16,5 +16,10 @@ namespace LoginHandling
         {
             InitializeComponent();
         }
+
+        private void AdminWindow_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
