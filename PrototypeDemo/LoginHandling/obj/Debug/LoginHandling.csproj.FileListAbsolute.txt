@@ -23,6 +23,7 @@ C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\obj\Debu
 C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.Properties.Resources.resources
 C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.csproj.GenerateResource.Cache
 C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\bin\Debug\LoginHandling.exe.config
+<<<<<<< HEAD
 C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\bin\Debug\bin\Debug\MoodfullDataBase.sqlite3
 C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\bin\Debug\x86\sqlite3.dll
 C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\bin\Debug\x64\sqlite3.dll
@@ -32,3 +33,5 @@ C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\bin\Debu
 C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\bin\Debug\System.Data.SQLite.xml
 C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.exe
 C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.pdb
+=======
+>>>>>>> parent of 4e84482... user/owner/admin forms
