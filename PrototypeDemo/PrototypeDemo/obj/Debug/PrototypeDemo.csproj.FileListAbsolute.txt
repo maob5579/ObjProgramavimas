@@ -84,11 +84,3 @@ C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\PrototypeDemo\obj\Debu
 C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\PrototypeDemo\obj\Debug\PrototypeDemo.Form1.resources
 C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\PrototypeDemo\obj\Debug\PrototypeDemo.Properties.Resources.resources
 C:\Users\Mantas\Desktop\ProjektasObjektinio\PrototypeDemo\PrototypeDemo\obj\Debug\PrototypeDemo.csproj.GenerateResource.Cache
-C:\Users\Administratorius\Documents\ObjProgramavimas\PrototypeDemo\PrototypeDemo\obj\Debug\PrototypeDemo.csprojAssemblyReference.cache
-C:\Users\Administratorius\Documents\ObjProgramavimas\PrototypeDemo\PrototypeDemo\obj\Debug\PrototypeDemo.Form1.resources
-C:\Users\Administratorius\Documents\ObjProgramavimas\PrototypeDemo\PrototypeDemo\obj\Debug\PrototypeDemo.Properties.Resources.resources
-C:\Users\Administratorius\Documents\ObjProgramavimas\PrototypeDemo\PrototypeDemo\obj\Debug\PrototypeDemo.UserForm.resources
-C:\Users\Administratorius\Documents\ObjProgramavimas\PrototypeDemo\PrototypeDemo\obj\Debug\PrototypeDemo.csproj.GenerateResource.cache
-C:\Users\Administratorius\Documents\ObjProgramavimas\PrototypeDemo\PrototypeDemo\obj\Debug\PrototypeDemo.csproj.CoreCompileInputs.cache
-C:\Users\Administratorius\Documents\ObjProgramavimas\PrototypeDemo\PrototypeDemo\obj\Debug\PrototypeDemo.exe
-C:\Users\Administratorius\Documents\ObjProgramavimas\PrototypeDemo\PrototypeDemo\obj\Debug\PrototypeDemo.pdb
