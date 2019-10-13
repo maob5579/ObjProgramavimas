@@ -42,19 +42,70 @@ namespace LoginHandling
             }
             else
             {
-                string query = "INSERT into Table_Login (Username,Password) values(@Username,@Password);";
+                string query = "INSERT into User (Username,Password,FirstName,LastName,UserType) values(@Username,@Password,@FirstName,@LastName,0);";
               
-                SQLiteConnection sqlConnection = new SQLiteConnection("Data Source=LoginDataBase.sqlite3;Version=3;");
+                SQLiteConnection sqlConnection = new SQLiteConnection("Data Source=MoodfullDataBase.sqlite3;Version=3;");
                 sqlConnection.Open();
-                SQLiteCommand sqlCommand = new SQLiteCommand(query, sqlConnection);
-                sqlCommand.Parameters.AddWithValue("@Username", textBox_Username.Text);
-                sqlCommand.Parameters.AddWithValue("@Password", textBox_Password.Text);
-                sqlCommand.ExecuteNonQuery();
-                
-                
-                
+                if (!usernameExists(textBox_Username.Text))
+                {
+                    SQLiteCommand sqlCommand = new SQLiteCommand(query, sqlConnection);
+                    sqlCommand.Parameters.AddWithValue("@Username", textBox_Username.Text);
+                    sqlCommand.Parameters.AddWithValue("@Password", textBox_Password.Text);
+                    sqlCommand.Parameters.AddWithValue("@FirstName", textBox_FirstName.Text);
+                    sqlCommand.Parameters.AddWithValue("@LastName", textBox_LastName.Text);
+                    sqlCommand.ExecuteNonQuery();
+                    sqlConnection.Close();
+
+                }
+                else
+                {
+                    MessageBox.Show("This username already exists");
+                }
+
+
 
             }
+        }
+                    
+        bool usernameExists (string username)
+        {
+            string query = "SELECT Username From User WHERE Username == @Username";
+            SQLiteConnection sqlConnection = new SQLiteConnection("Data Source=MoodfullDataBase.sqlite3;Version=3;");
+            sqlConnection.Open();
+            SQLiteCommand sqlCommand = new SQLiteCommand(query, sqlConnection);
+            sqlCommand.Parameters.AddWithValue("@Username", username);
+            SQLiteDataAdapter sqlDataAdapter = new SQLiteDataAdapter(sqlCommand);
+            DataTable dataTable = new DataTable();
+            sqlDataAdapter.Fill(dataTable);
+            if (dataTable.Rows.Count > 0)
+            {
+                sqlConnection.Close();
+                return true;
+            }
+            else
+            {
+                sqlConnection.Close();
+                return false;
+            }
+        }
+        private void textBox_Username_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bindingNavigator1_RefreshItems(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_PasswordComfirm_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

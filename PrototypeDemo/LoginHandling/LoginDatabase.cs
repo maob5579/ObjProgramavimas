@@ -15,10 +15,10 @@ namespace LoginHandling
         public LoginDatabase() {
 
 
-            dataBaseConnection = new SQLiteConnection("Data Source = LoginDataBase.sqlite3");
-            if (!File.Exists("./LoginDataBase.sqlite3"))
+            dataBaseConnection = new SQLiteConnection("Data Source = MoodfullDataBase.sqlite3");
+            if (!File.Exists("./MoodfullDataBase.sqlite3"))
             {
-                SQLiteConnection.CreateFile("LoginDataBase.sqlite3");
+                SQLiteConnection.CreateFile("MoodfullDataBase.sqlite3");
 
             }
             }
