@@ -17,7 +17,7 @@ namespace PrototypeDemo
             InitializeComponent();
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
             UserForm newWindow = new UserForm();

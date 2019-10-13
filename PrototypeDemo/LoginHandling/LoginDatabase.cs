@@ -12,16 +12,17 @@ namespace LoginHandling
     {
         public SQLiteConnection dataBaseConnection;
 
-        public LoginDatabase() {
+        public LoginDatabase()
+        {
 
 
-            dataBaseConnection = new SQLiteConnection("Data Source = MoodfullDataBase.sqlite3");
             if (!File.Exists("./MoodfullDataBase.sqlite3"))
             {
+                dataBaseConnection = new SQLiteConnection("Data Source = MoodfullDataBase.sqlite3");
                 SQLiteConnection.CreateFile("MoodfullDataBase.sqlite3");
 
             }
-            }
+        }
 
     }
 }

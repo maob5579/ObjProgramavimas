@@ -16,5 +16,20 @@ namespace PrototypeDemo
         {
             InitializeComponent();
         }
+
+        private void btnAddRestaurant_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDeleteRestaurant_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnViewRatings_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

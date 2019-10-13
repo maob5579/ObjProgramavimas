@@ -17,7 +17,7 @@ namespace PrototypeDemo
             InitializeComponent();
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void btnRateRestaurant_Click(object sender, EventArgs e)
         {
             this.Hide();
             Form1 cameraWindow  = new Form1();
@@ -25,7 +25,7 @@ namespace PrototypeDemo
             cameraWindow.Show();
         }
 
-        private void Button2_Click(object sender, EventArgs e)
+        private void btnShowRatedRestaurants_Click(object sender, EventArgs e)
         {
             this.Hide();
             RatedRest newWindow = new RatedRest();
@@ -33,7 +33,7 @@ namespace PrototypeDemo
             newWindow.Show();
         }
 
-        private void Button3_Click(object sender, EventArgs e)
+        private void btnShowRestaurantList_Click(object sender, EventArgs e)
         {
             this.Hide();
             Form1 cameraWindow = new Form1();
@@ -41,7 +41,7 @@ namespace PrototypeDemo
             cameraWindow.Show();
         }
 
-        private void Button4_Click(object sender, EventArgs e)
+        private void btnShowFavorites_Click(object sender, EventArgs e)
         {
             this.Hide();
             Form1 cameraWindow = new Form1();

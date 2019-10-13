@@ -22,12 +22,17 @@ namespace PrototypeDemo
 
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
             OwnerForm newWindow = new OwnerForm();
             newWindow.Closed += (s, args) => this.Close();
             newWindow.Show();
+        }
+
+        private void btnAddRestaurant_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

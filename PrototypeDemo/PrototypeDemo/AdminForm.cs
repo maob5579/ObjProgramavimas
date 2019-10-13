@@ -17,12 +17,22 @@ namespace PrototypeDemo
             InitializeComponent();
         }
 
-        private void Button2_Click(object sender, EventArgs e)
+        private void btnChangeRestName_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void btnDeleteRestaurant_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnManageRatings_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnChangeRestAddress_Click(object sender, EventArgs e)
         {
 
         }

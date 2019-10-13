@@ -16,13 +16,17 @@ namespace PrototypeDemo
         {
             InitializeComponent();
         }
-
-        private void Button1_Click(object sender, EventArgs e)
+        private void btnDeleteRestaurant_Click(object sender, EventArgs e)
         {
             this.Hide();
             OwnerForm newWindow = new OwnerForm();
             newWindow.Closed += (s, args) => this.Close();
             newWindow.Show();
         }
+        private void DeleteRestaurant_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
