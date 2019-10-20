@@ -10,8 +10,9 @@ namespace PrototypeDemo
 {
     public class MoodDetection
     {
-        private const string subscriptionKey = "4d238c88108648f9ad909860bea173a8";
-        private const string uriBase = "https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect";
+        private const string subscriptionKey = "850a4b31e6d546b3938f994074acad6f";
+        //private const string uriBase = "https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect";
+        private const string uriBase = "https://faceapieservice.cognitiveservices.azure.com/face/v1.0/detect";
 
         public async Task<MoodModel> GetEmotions(string filePath)
         {

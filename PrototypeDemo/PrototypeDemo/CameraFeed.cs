@@ -56,6 +56,7 @@ namespace PrototypeDemo
         {
             IsCameraRunning = false;
             capture.Dispose();
+            camera.Abort();
         }
     }
 }
