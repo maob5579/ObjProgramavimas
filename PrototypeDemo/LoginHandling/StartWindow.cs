@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using LoginHandling;
 using System.Data.SQLite;
+using PrototypeDemo;
 
 namespace LoginHandling
 {
@@ -41,64 +42,89 @@ namespace LoginHandling
                 MessageBox.Show("Enter username and password!");
                 return;
             }
-       
-                string query = "SELECT * From User WHERE Username == @Username and Password == @Password";
-                sqlConnection.Open();
-                sqlCommand = new SQLiteCommand(query, sqlConnection);
-                sqlCommand.Parameters.AddWithValue("@Username", textBox_Username.Text);
-                sqlCommand.Parameters.AddWithValue("@Password", textBox_Password.Text);
-                sqlDataAdapter = new SQLiteDataAdapter(sqlCommand);
-                DataTable dataTable = new DataTable();
-                sqlDataAdapter.Fill(dataTable);
+
+            string query = "SELECT * From User WHERE Username == @Username and Password == @Password";
+            sqlConnection.Open();
+            sqlCommand = new SQLiteCommand(query, sqlConnection);
+            sqlCommand.Parameters.AddWithValue("@Username", textBox_Username.Text);
+            sqlCommand.Parameters.AddWithValue("@Password", textBox_Password.Text);
+            sqlDataAdapter = new SQLiteDataAdapter(sqlCommand);
+            DataTable dataTable = new DataTable();
+            sqlDataAdapter.Fill(dataTable);
 
             if (dataTable.Rows.Count > 0)
             {
-                this.Hide();
-                var newWindow = new PrototypeDemo.UserForm(textBox_Username.Text);
-                newWindow.ShowDialog();
-                this.Show();
+                MessageBox.Show(DataBase.GetUserID(textBox_Username.Text).ToString());
+                switch (DataBase.GetUserID(textBox_Username.Text))
+                {
+                    case 2:
+                        this.Hide();
+                        var adminForm = new AdminForm();
+                        adminForm.Closed += (s, args) => this.Close();
+                        adminForm.Show();
+                        break;
+                    case 1:
+                        this.Hide();
+                        var resOwnerForm = new OwnerForm();
+                        resOwnerForm.Closed += (s, args) => this.Close();
+                        resOwnerForm.Show();
+                        break;
+                    case 0:
+                        this.Hide();
+                        var newWindow = new PrototypeDemo.UserForm(textBox_Username.Text);
+                        newWindow.ShowDialog();
+                        this.Show();
+                        break;
+                    default:
+                        MessageBox.Show("User not found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        break;
+                }
             }
 
             else
             {
                 MessageBox.Show("Login Failed");
             }
+
+            sqlConnection.Close();
         }
 
-        private bool isAdmin(string username, string password)
+    
+
+    private bool isAdmin(string username, string password)
+    {
+        string query = "SELECT UserType From User WHERE Username == @Username and Password == @Password and UserType == 1";
+        SQLiteConnection sqlConnection = new SQLiteConnection("Data Source=MoodfullDataBase.sqlite3;Version=3;");
+        sqlConnection.Open();
+        SQLiteCommand sqlCommand = new SQLiteCommand(query, sqlConnection);
+        sqlCommand.Parameters.AddWithValue("@Username", username);
+        sqlCommand.Parameters.AddWithValue("@Password", password);
+        SQLiteDataAdapter sqlDataAdapter = new SQLiteDataAdapter(sqlCommand);
+        DataTable dataTable = new DataTable();
+        sqlDataAdapter.Fill(dataTable);
+        if (dataTable.Rows.Count > 0)
         {
-            string query = "SELECT UserType From User WHERE Username == @Username and Password == @Password and UserType == 1";
-            SQLiteConnection sqlConnection = new SQLiteConnection("Data Source=MoodfullDataBase.sqlite3;Version=3;");
-            sqlConnection.Open();
-            SQLiteCommand sqlCommand = new SQLiteCommand(query, sqlConnection);
-            sqlCommand.Parameters.AddWithValue("@Username", username);
-            sqlCommand.Parameters.AddWithValue("@Password", password);
-            SQLiteDataAdapter sqlDataAdapter = new SQLiteDataAdapter(sqlCommand);
-            DataTable dataTable = new DataTable();
-            sqlDataAdapter.Fill(dataTable);
-            if (dataTable.Rows.Count > 0)
-            {
-                sqlConnection.Close();
-                return true;
-            }
-            else
-            {
-                sqlConnection.Close();
-                return false;
-            }
+            sqlConnection.Close();
+            return true;
         }
-
-        private void button_Register_Click(object sender, EventArgs e)
+        else
         {
-            this.Hide();
-            var regForm = new RegisterWindow();
-            regForm.Closed += (s, args) => this.Close();
-            regForm.Show();
-        }
-
-        private void textBox_Username_TextChanged(object sender, EventArgs e)
-        {
-
+            sqlConnection.Close();
+            return false;
         }
     }
+
+    private void button_Register_Click(object sender, EventArgs e)
+    {
+        this.Hide();
+        var regForm = new RegisterWindow();
+        regForm.Closed += (s, args) => this.Close();
+        regForm.Show();
+    }
+
+    private void textBox_Username_TextChanged(object sender, EventArgs e)
+    {
+
+    }
+}
 }
