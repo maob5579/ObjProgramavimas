@@ -16,6 +16,8 @@ namespace LoginHandling
         private static DataTable dataTable;
 
 
+
+        //Checks if User name exists. Returns data table
         public static DataTable CheckUsername(string name, string lastName)
         {
             string query = "SELECT * From User WHERE Username == @Username";
@@ -29,6 +31,13 @@ namespace LoginHandling
             return dataTable;
         }
 
+        /***
+         *Gets user types
+         * User Types:
+         * 2 - ADMIN
+         * 1 - Restaurant Owner
+         * 0 - Simple use
+        */
         public static int GetUserID(string userName)
         {
             sqlConnection.Open();
@@ -43,7 +52,7 @@ namespace LoginHandling
 
             object obj = 0;
 
-           if (dataTable.Rows.Count>0)
+            if (dataTable.Rows.Count > 0)
             {
                 obj = dataTable.Rows[0]["UserType"];
             }
@@ -52,8 +61,11 @@ namespace LoginHandling
                 System.Windows.Forms.MessageBox.Show("Vartotojas nerastas");
             }
             sqlConnection.Close();
-            int.TryParse(obj.ToString(), out  ID);
+            int.TryParse(obj.ToString(), out ID);
             return ID;
         }
+
+
+
     }
 }

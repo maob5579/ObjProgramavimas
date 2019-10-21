@@ -1,1 +1,9 @@
 .vs/
+PrototypeDemo/PrototypeDemo/bin/Debug/System.Data.SQLite.dll
+PrototypeDemo/PrototypeDemo/bin/Debug/System.Data.SQLite.xml
+PrototypeDemo/PrototypeDemo/bin/Debug/x64/SQLite.Interop.dll
+PrototypeDemo/PrototypeDemo/bin/Debug/x64/sqlite3.dll
+PrototypeDemo/PrototypeDemo/bin/Debug/x86/SQLite.Interop.dll
+PrototypeDemo/PrototypeDemo/bin/Debug/x86/sqlite3.dll
+PrototypeDemo/PrototypeDemo/obj/Debug/PrototypeDemo.csprojResolveAssemblyReference.cache
+PrototypeDemo/PrototypeDemo/obj/Debug/PrototypeDemo.RestRating.resources
