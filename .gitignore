@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .bundle
 .DS_Store
 db/*.sqlite3
@@ -5,3 +6,6 @@ log/*.log
 tmp/
 public/system/images/
 public/system/avatars/
+=======
+.vs/
+>>>>>>> bb34ac4eca2fe3f04ef353f69f7a7b1ae1e54210

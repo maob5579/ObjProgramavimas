@@ -15,6 +15,7 @@ C:\Users\Mantas\Desktop\projektasObjektinio\PrototypeDemo\LoginHandling\obj\Debu
 C:\Users\Mantas\Desktop\projektasObjektinio\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.exe
 C:\Users\Mantas\Desktop\projektasObjektinio\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.pdb
 C:\Users\Mantas\Desktop\projektasObjektinio\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.AdminWindow.resources
+<<<<<<< HEAD
 D:\Users\meta\Desktop\MoodFull\ObjProgramavimas\PrototypeDemo\LoginHandling\bin\Debug\x86\sqlite3.dll
 D:\Users\meta\Desktop\MoodFull\ObjProgramavimas\PrototypeDemo\LoginHandling\bin\Debug\x64\sqlite3.dll
 D:\Users\meta\Desktop\MoodFull\ObjProgramavimas\PrototypeDemo\LoginHandling\bin\Debug\bin\Debug\MoodfullDataBase.sqlite3
@@ -79,3 +80,25 @@ D:\Users\meta\Desktop\MoodFullPLAY\ObjProgramavimas\PrototypeDemo\LoginHandling\
 D:\Users\meta\Desktop\MoodFullPLAY\ObjProgramavimas\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.csproj.CopyComplete
 D:\Users\meta\Desktop\MoodFullPLAY\ObjProgramavimas\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.exe
 D:\Users\meta\Desktop\MoodFullPLAY\ObjProgramavimas\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.pdb
+=======
+E:\Visual Studio projects\11obj\PrototypeDemo\LoginHandling\bin\Debug\bin\Debug\MoodfullDataBase.sqlite3
+E:\Visual Studio projects\11obj\PrototypeDemo\LoginHandling\bin\Debug\x86\sqlite3.dll
+E:\Visual Studio projects\11obj\PrototypeDemo\LoginHandling\bin\Debug\x64\sqlite3.dll
+E:\Visual Studio projects\11obj\PrototypeDemo\LoginHandling\bin\Debug\LoginHandling.exe.config
+E:\Visual Studio projects\11obj\PrototypeDemo\LoginHandling\bin\Debug\LoginHandling.exe
+E:\Visual Studio projects\11obj\PrototypeDemo\LoginHandling\bin\Debug\LoginHandling.pdb
+E:\Visual Studio projects\11obj\PrototypeDemo\LoginHandling\bin\Debug\System.Data.SQLite.dll
+E:\Visual Studio projects\11obj\PrototypeDemo\LoginHandling\bin\Debug\System.Data.SQLite.xml
+E:\Visual Studio projects\11obj\PrototypeDemo\LoginHandling\bin\Debug\System.Data.SQLite.dll.config
+E:\Visual Studio projects\11obj\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.csprojAssemblyReference.cache
+E:\Visual Studio projects\11obj\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.AdminWindow.resources
+E:\Visual Studio projects\11obj\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.RegisterWindow.resources
+E:\Visual Studio projects\11obj\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.MainWindow.resources
+E:\Visual Studio projects\11obj\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.StartWindow.resources
+E:\Visual Studio projects\11obj\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.Properties.Resources.resources
+E:\Visual Studio projects\11obj\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.csproj.GenerateResource.cache
+E:\Visual Studio projects\11obj\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.csproj.CoreCompileInputs.cache
+E:\Visual Studio projects\11obj\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.csproj.CopyComplete
+E:\Visual Studio projects\11obj\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.exe
+E:\Visual Studio projects\11obj\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.pdb
+>>>>>>> bb34ac4eca2fe3f04ef353f69f7a7b1ae1e54210
