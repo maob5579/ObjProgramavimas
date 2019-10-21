@@ -31,5 +31,10 @@ namespace PrototypeDemo
         {
 
         }
+
+        private void OwnerForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
