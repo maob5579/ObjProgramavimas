@@ -25,7 +25,6 @@ namespace LoginHandling
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            int a = DataBase.GetUserID("a");
             sqlConnection = new SQLiteConnection("Data Source=MoodfullDataBase.sqlite3;Version=3;");
 
         }
@@ -52,21 +51,18 @@ namespace LoginHandling
                 DataTable dataTable = new DataTable();
                 sqlDataAdapter.Fill(dataTable);
 
-            if (dataTable.Rows.Count>0)
+            if (dataTable.Rows.Count > 0)
             {
-                switch (DataBase.GetUserID(textBox_Username.Text))
-                {
-                    case 1:
-
-                        break;
-                    default:
-                        break;
-                }
-
-
+                this.Hide();
+                var newWindow = new PrototypeDemo.UserForm(textBox_Username.Text);
+                newWindow.ShowDialog();
+                this.Show();
             }
-         
 
+            else
+            {
+                MessageBox.Show("Login Failed");
+            }
         }
 
         private bool isAdmin(string username, string password)

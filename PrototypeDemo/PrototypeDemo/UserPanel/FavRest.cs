@@ -10,24 +10,21 @@ using System.Windows.Forms;
 
 namespace PrototypeDemo
 {
-    public partial class RestList : Form
+    public partial class FavRest : Form
     {
-        public RestList()
+        public FavRest()
         {
             InitializeComponent();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            UserForm newWindow = new UserForm();
-            newWindow.Closed += (s, args) => this.Close();
-            newWindow.Show();
+            this.DialogResult = DialogResult.OK;
         }
 
-        private void RestList_Load(object sender, EventArgs e)
+        private void FavRest_Load(object sender, EventArgs e)
         {
-
+           
         }
     }
 }
