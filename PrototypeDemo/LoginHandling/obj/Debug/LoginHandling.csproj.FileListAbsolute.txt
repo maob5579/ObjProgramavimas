@@ -1,0 +1,3 @@
+C:\Users\Mantas\Desktop\projektasObjektinio\PrototypeDemo\LoginHandling\bin\Debug\LoginHandling.exe.config
+C:\Users\Mantas\Desktop\projektasObjektinio\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.exe
+C:\Users\Mantas\Desktop\projektasObjektinio\PrototypeDemo\LoginHandling\obj\Debug\LoginHandling.pdb
