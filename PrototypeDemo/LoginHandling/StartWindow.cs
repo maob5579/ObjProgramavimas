@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using LoginHandling;
 using System.Data.SQLite;
+using PrototypeDemo;
 
 namespace LoginHandling
 {
@@ -54,18 +55,33 @@ namespace LoginHandling
 
             if (dataTable.Rows.Count>0)
             {
+                MessageBox.Show(DataBase.GetUserID(textBox_Username.Text).ToString());
                 switch (DataBase.GetUserID(textBox_Username.Text))
                 {
+                    case 2:
+                        this.Hide();
+                        var adminForm = new AdminForm();
+                        adminForm.Closed += (s, args) => this.Close();
+                        adminForm.Show();
+                        break;
                     case 1:
-
+                        this.Hide();
+                        var resOwnerForm = new OwnerForm();
+                        resOwnerForm.Closed += (s, args) => this.Close();
+                        resOwnerForm.Show();
+                        break;
+                    case 0:
+                        this.Hide();
+                        var userForm = new UserForm();
+                        userForm.Closed += (s, args) => this.Close();
+                        userForm.Show();
                         break;
                     default:
+                        MessageBox.Show("User not found", "Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
                         break;
                 }
-
-
             }
-         
+            sqlConnection.Close();
 
         }
 
