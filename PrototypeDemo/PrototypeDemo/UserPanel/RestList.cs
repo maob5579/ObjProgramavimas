@@ -59,15 +59,41 @@ namespace PrototypeDemo
         }
         private void FillMoodRating()
         {
-            
+
+            string query = "SELECT Name, AVGMood From Restaurant ORDER BY AVGMood DESC";
+            SQLiteConnection sqlConnection = new SQLiteConnection("Data Source=MoodfullDataBase.sqlite3;Version=3;");
+            sqlConnection.Open();
+            SQLiteCommand sqlCommand = new SQLiteCommand(query, sqlConnection);
+            SQLiteDataAdapter sqlDataAdapter = new SQLiteDataAdapter(sqlCommand);
+            DataTable dataTable = new DataTable();
+            sqlDataAdapter.Fill(dataTable);
+
+            dataGridView1.DataSource = dataTable;
+
         }
         private void FillPriceRating()
         {
-           
+            string query = "SELECT Name, AVGPrice From Restaurant ORDER BY AVGPrice DESC";
+            SQLiteConnection sqlConnection = new SQLiteConnection("Data Source=MoodfullDataBase.sqlite3;Version=3;");
+            sqlConnection.Open();
+            SQLiteCommand sqlCommand = new SQLiteCommand(query, sqlConnection);
+            SQLiteDataAdapter sqlDataAdapter = new SQLiteDataAdapter(sqlCommand);
+            DataTable dataTable = new DataTable();
+            sqlDataAdapter.Fill(dataTable);
+
+            dataGridView2.DataSource = dataTable;
         }
         private void FillExperienceRating()
         {
-            
+            string query = "SELECT Name, AVGExperience From Restaurant ORDER BY AVGExperience DESC";
+            SQLiteConnection sqlConnection = new SQLiteConnection("Data Source=MoodfullDataBase.sqlite3;Version=3;");
+            sqlConnection.Open();
+            SQLiteCommand sqlCommand = new SQLiteCommand(query, sqlConnection);
+            SQLiteDataAdapter sqlDataAdapter = new SQLiteDataAdapter(sqlCommand);
+            DataTable dataTable = new DataTable();
+            sqlDataAdapter.Fill(dataTable);
+
+            dataGridView3.DataSource = dataTable;
         }
     }
 }
