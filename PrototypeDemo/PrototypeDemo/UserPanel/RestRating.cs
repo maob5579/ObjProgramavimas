@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SQLite;
+using PrototypeDemo.Models;
 
 namespace PrototypeDemo
 {
@@ -15,9 +16,14 @@ namespace PrototypeDemo
     {
         SQLiteCommand sqlCommand;
         SQLiteDataReader sqlRead;
-        public RestRating()
+        private int happinessRating;
+        public RestRating(double happy)
         {
             InitializeComponent();
+
+            MoodModel mood = new MoodModel();
+            this.happinessRating = (int)Math.Round(happy*10);
+            label8.Text = happinessRating.ToString() ;
         }
 
         private void RestRating_Load(object sender, EventArgs e)
@@ -96,7 +102,13 @@ namespace PrototypeDemo
                 else
                 {
                     comboBox1.Items.Add(textBox1.Text);
+                    string query = "INSERT into Restaurant (Name) values(@Name);";
+                    SQLiteCommand sqlCommand = new SQLiteCommand(query, sqlConnection);
+                    sqlCommand.Parameters.AddWithValue("@Name", textBox1.Text);
+                    sqlCommand.ExecuteNonQuery();
+                    sqlConnection.Close();
                     textBox1.ResetText();
+                    
                 }
             }
 
@@ -131,22 +143,55 @@ namespace PrototypeDemo
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // default mood rating - 10
-            string query = "INSERT into Restaurant (Username, Name, MoodRating, Price, Experience) values(@Username,@Name,10,@Price,@Experience);";
             SQLiteConnection sqlConnection = new SQLiteConnection("Data Source=MoodfullDataBase.sqlite3;Version=3;");
-            sqlConnection.Open();  
+            string query = "SELECT * From Restaurant WHERE Name == @Name";
+            sqlConnection.Open();
             SQLiteCommand sqlCommand = new SQLiteCommand(query, sqlConnection);
-            sqlCommand.Parameters.AddWithValue("@Username", Account.Username);
             sqlCommand.Parameters.AddWithValue("@Name", comboBox1.Text);
-            sqlCommand.Parameters.AddWithValue("@Price", label3.Text);
-            sqlCommand.Parameters.AddWithValue("@Experience", label6.Text);
-            sqlCommand.ExecuteNonQuery();
-            sqlConnection.Close();
+            SQLiteDataAdapter sqlDataAdapter = new SQLiteDataAdapter(sqlCommand);
+            DataTable dataTable = new DataTable();
+            sqlDataAdapter.Fill(dataTable);
+            if (dataTable.Rows.Count == 0)
+            {
+                MessageBox.Show("No restaurant selected!");
+                return;
+            }
+            SQLiteDataReader reader = sqlCommand.ExecuteReader();
+            dataTable.Load(reader);
+            
+            DataRow restaurant = dataTable.Rows[0];
+            long restaurantId = restaurant.Field<Int64>("RestaurantId");
 
+            InsertEvaluation(restaurantId);
             this.DialogResult = DialogResult.OK;
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void InsertEvaluation(long restId)
+        {
+            // default mood rating - 10
+            string query = "INSERT into Evaluation (UserId, RestaurantId, MoodRating, Price, Experience) values(@UserId,@RestaurantId,@MoodRating,@Price,@Experience);";
+            SQLiteConnection sqlConnection = new SQLiteConnection("Data Source=MoodfullDataBase.sqlite3;Version=3;");
+            sqlConnection.Open();  
+            SQLiteCommand sqlCommand = new SQLiteCommand(query, sqlConnection);
+            sqlCommand.Parameters.AddWithValue("@UserId", Account.LoginId);
+            sqlCommand.Parameters.AddWithValue("@RestaurantId", restId);
+            sqlCommand.Parameters.AddWithValue("@MoodRating", happinessRating);
+            sqlCommand.Parameters.AddWithValue("@Price", label3.Text);
+            sqlCommand.Parameters.AddWithValue("@Experience", label6.Text);
+            sqlCommand.ExecuteNonQuery();
+            sqlConnection.Close();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
         {
 
         }
