@@ -41,11 +41,26 @@ namespace LoginHandling
          * 1 - Restaurant Owner
          * 0 - Simple use
         */
-        public static int GetUserID(string userName)
+        public static int GetUserID(string userName, string password = null)
         {
             sqlConnection.Open();
             int ID;
-            string query = "SELECT UserType FROM User WHERE Username == @Username";
+            string query =string.Empty;
+            if (password != null)
+            {
+                 query = "SELECT UserType FROM User WHERE Username == @Username AND Password == @Password";
+
+            }
+            else
+            {
+                 query = "SELECT UserType FROM User WHERE Username == @Username";
+            }
+
+            if (query ==string.Empty)
+            {
+                System.Windows.Forms.MessageBox.Show("Error with SQL query");
+                return -1;
+            }
             sqlCommand = new SQLiteCommand(query, sqlConnection);
             sqlCommand.Parameters.AddWithValue(@"Username", userName);
             sqlDataAdapter = new SQLiteDataAdapter(sqlCommand);
