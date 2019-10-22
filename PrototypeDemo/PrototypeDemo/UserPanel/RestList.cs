@@ -60,7 +60,7 @@ namespace PrototypeDemo
         private void FillMoodRating()
         {
 
-            string query = "SELECT Name, AVGMood From Restaurant ORDER BY AVGMood DESC";
+            string query = "SELECT Name, ROUND(AVGMood,2) As AVGMood From Restaurant ORDER BY AVGMood DESC";
             SQLiteConnection sqlConnection = new SQLiteConnection("Data Source=MoodfullDataBase.sqlite3;Version=3;");
             sqlConnection.Open();
             SQLiteCommand sqlCommand = new SQLiteCommand(query, sqlConnection);
@@ -73,7 +73,7 @@ namespace PrototypeDemo
         }
         private void FillPriceRating()
         {
-            string query = "SELECT Name, AVGPrice From Restaurant ORDER BY AVGPrice DESC";
+            string query = "SELECT Name, ROUND(AVGPrice,2) As AVGPrice From Restaurant ORDER BY AVGPrice DESC";
             SQLiteConnection sqlConnection = new SQLiteConnection("Data Source=MoodfullDataBase.sqlite3;Version=3;");
             sqlConnection.Open();
             SQLiteCommand sqlCommand = new SQLiteCommand(query, sqlConnection);
@@ -85,7 +85,7 @@ namespace PrototypeDemo
         }
         private void FillExperienceRating()
         {
-            string query = "SELECT Name, AVGExperience From Restaurant ORDER BY AVGExperience DESC";
+            string query = "SELECT Name, ROUND(AVGExperience,2) AS AVGExperience From Restaurant ORDER BY AVGExperience DESC";
             SQLiteConnection sqlConnection = new SQLiteConnection("Data Source=MoodfullDataBase.sqlite3;Version=3;");
             sqlConnection.Open();
             SQLiteCommand sqlCommand = new SQLiteCommand(query, sqlConnection);

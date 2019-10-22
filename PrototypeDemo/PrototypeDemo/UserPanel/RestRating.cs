@@ -22,7 +22,7 @@ namespace PrototypeDemo
             InitializeComponent();
 
             MoodModel mood = new MoodModel();
-            this.happinessRating = happy*10;
+            this.happinessRating = Math.Round(happy*10, 2);
             label8.Text = happinessRating.ToString();
         }
 
