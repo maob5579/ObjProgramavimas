@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SQLite;
 using System.Data;
+using System.Collections.Generic;
+
 
 namespace LoginHandling
 {
@@ -14,6 +16,7 @@ namespace LoginHandling
         private static SQLiteCommand sqlCommand;
         private static SQLiteDataAdapter sqlDataAdapter;
         private static DataTable dataTable;
+        private static SQLiteDataReader dataReader;
 
 
 
@@ -64,6 +67,28 @@ namespace LoginHandling
             int.TryParse(obj.ToString(), out ID);
             return ID;
         }
+        public static  List<Evaluation> GetEvaluationList()
+        {
+            List<Evaluation> evaluationList = new List<Evaluation>();
+            sqlConnection.Open();
+            string query = "SELECT EvaluationId,UserId,RestaurantId,MoodRating FROM Evaluation";
+            sqlCommand = new SQLiteCommand(query, sqlConnection);
+            
+            using (dataReader = sqlCommand.ExecuteReader())
+            {
+                while (dataReader.Read())
+                {
+                    evaluationList.Add(new Evaluation(dataReader.GetInt32(0), dataReader.GetInt32(1), dataReader.GetInt32(2), dataReader.GetInt32(3)));
+                    
+                }
+            }
+            sqlConnection.Close();
+
+            return evaluationList;
+        }
+
+
+
 
 
 

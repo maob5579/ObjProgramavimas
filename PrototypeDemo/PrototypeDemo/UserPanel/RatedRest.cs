@@ -26,17 +26,17 @@ namespace PrototypeDemo
 
         private void RatedRest_Load(object sender, EventArgs e)
         {
-            string query = "SELECT Name, MoodRating, Price, Experience From Restaurant, Evaluation, User WHERE Evaluation.UserId == @User AND User.LoginId = Evaluation.UserId AND Restaurant.RestaurantId = Evaluation.RestaurantId";
-            SQLiteConnection sqlConnection = new SQLiteConnection("Data Source=MoodfullDataBase.sqlite3;Version=3;");
-            sqlConnection.Open();
-            SQLiteCommand sqlCommand = new SQLiteCommand(query, sqlConnection);
-            sqlCommand.Parameters.AddWithValue("@User", Account.LoginId);
-            SQLiteDataAdapter sqlDataAdapter = new SQLiteDataAdapter(sqlCommand);
-            DataTable dataTable = new DataTable();
-            sqlDataAdapter.Fill(dataTable);
+             string query = "SELECT Name, MoodRating, Price, Experience From Restaurant, Evaluation, User WHERE Evaluation.UserId == @User AND User.LoginId = Evaluation.UserId AND Restaurant.RestaurantId = Evaluation.RestaurantId";
+             SQLiteConnection sqlConnection = new SQLiteConnection("Data Source=MoodfullDataBase.sqlite3;Version=3;");
+             sqlConnection.Open();
+             SQLiteCommand sqlCommand = new SQLiteCommand(query, sqlConnection);
+             sqlCommand.Parameters.AddWithValue("@User", Account.LoginId);
+             SQLiteDataAdapter sqlDataAdapter = new SQLiteDataAdapter(sqlCommand);
+             DataTable dataTable = new DataTable();
+             sqlDataAdapter.Fill(dataTable);
 
-            dataGridView1.DataSource = dataTable;
-           
+             dataGridView1.DataSource = dataTable;
+
         }
 
         private void label1_Click(object sender, EventArgs e)

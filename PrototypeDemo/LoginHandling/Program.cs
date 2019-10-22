@@ -13,10 +13,15 @@ namespace LoginHandling
         /// </summary>
         [STAThread]
         static void Main()
-        {  LoginDatabase databaseObject = new LoginDatabase();
+        {   LoginDatabase databaseObject = new LoginDatabase();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new StartWindow());
+            //Evaluation.ShowEvaluations();
+            
+            
+           
+           
         }
     }
 }
