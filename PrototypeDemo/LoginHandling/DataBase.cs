@@ -11,14 +11,13 @@ using System.Collections.Generic;
 namespace LoginHandling
 {
     static class DataBase
-    {
+    { 
+
         private static SQLiteConnection sqlConnection = new SQLiteConnection("Data Source=MoodfullDataBase.sqlite3;Version=3;");
         private static SQLiteCommand sqlCommand;
         private static SQLiteDataAdapter sqlDataAdapter;
         private static DataTable dataTable;
         private static SQLiteDataReader dataReader;
-
-
 
         //Checks if User name exists. Returns data table
         public static DataTable CheckUsername(string name, string lastName)
@@ -43,20 +42,22 @@ namespace LoginHandling
         */
         public static int GetUserID(string userName, string password = null)
         {
+
+
             sqlConnection.Open();
             int ID;
-            string query =string.Empty;
+            string query = string.Empty;
             if (password != null)
             {
-                 query = "SELECT UserType FROM User WHERE Username == @Username AND Password == @Password";
+                query = "SELECT UserType FROM User WHERE Username == @Username AND Password == @Password";
 
             }
             else
             {
-                 query = "SELECT UserType FROM User WHERE Username == @Username";
+                query = "SELECT UserType FROM User WHERE Username == @Username";
             }
 
-            if (query ==string.Empty)
+            if (query == string.Empty)
             {
                 System.Windows.Forms.MessageBox.Show("Error with SQL query");
                 return -1;
@@ -82,19 +83,19 @@ namespace LoginHandling
             int.TryParse(obj.ToString(), out ID);
             return ID;
         }
-        public static  List<Evaluation> GetEvaluationList()
+        public static List<Evaluation> GetEvaluationList()
         {
             List<Evaluation> evaluationList = new List<Evaluation>();
             sqlConnection.Open();
             string query = "SELECT EvaluationId,UserId,RestaurantId,MoodRating FROM Evaluation";
             sqlCommand = new SQLiteCommand(query, sqlConnection);
-            
+
             using (dataReader = sqlCommand.ExecuteReader())
             {
                 while (dataReader.Read())
                 {
                     evaluationList.Add(new Evaluation(dataReader.GetInt32(0), dataReader.GetInt32(1), dataReader.GetInt32(2), dataReader.GetInt32(3)));
-                    
+
                 }
             }
             sqlConnection.Close();

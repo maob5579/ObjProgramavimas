@@ -56,10 +56,14 @@ namespace LoginHandling
                     sqlCommand.ExecuteNonQuery();
                     sqlConnection.Close();
 
+                    MessageBox.Show("Registracija atlikta sekmingai");
+                    button_SignIn.PerformClick();
+
                 }
                 else
                 {
                     MessageBox.Show("This username already exists");
+                    return;
                 }
 
 
