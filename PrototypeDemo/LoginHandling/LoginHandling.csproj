@@ -60,6 +60,7 @@
     <Compile Include="AdminWindow.Designer.cs">
       <DependentUpon>AdminWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="Evaluation.cs" />
     <Compile Include="DataBase.cs" />
     <Compile Include="RegisterWindow.cs">
       <SubType>Form</SubType>
