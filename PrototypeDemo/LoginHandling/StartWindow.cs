@@ -52,6 +52,8 @@ namespace LoginHandling
             DataTable dataTable = new DataTable();
             sqlDataAdapter.Fill(dataTable);
 
+            
+
             if (dataTable.Rows.Count > 0)
             {
                 MessageBox.Show(DataBase.GetUserID(textBox_Username.Text).ToString());
@@ -70,8 +72,14 @@ namespace LoginHandling
                         resOwnerForm.Show();
                         break;
                     case 0:
+                        SQLiteDataReader reader = sqlCommand.ExecuteReader();
+                        dataTable.Load(reader);
+                        DataRow user= dataTable.Rows[0];
+                        long loginId = user.Field<Int64>("LoginId");
+//
+
                         this.Hide();
-                        var newWindow = new PrototypeDemo.UserForm(textBox_Username.Text);
+                        var newWindow = new PrototypeDemo.UserForm(textBox_Username.Text, loginId);
                         newWindow.ShowDialog();
                         this.Show();
                         break;

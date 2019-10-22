@@ -32,6 +32,7 @@
             this.btnBack = new System.Windows.Forms.Button();
             this.comboRestaurantList = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.RatingListBox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // label1
@@ -51,7 +52,7 @@
             this.btnBack.BackgroundImage = global::PrototypeDemo.Properties.Resources.kisspng_arrow_computer_icons_clip_art_scalable_vector_grap_return_arrow_svg_png_icon_free_download_72268_5cd6cd8be41546_5477184415575811959342;
             this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBack.Location = new System.Drawing.Point(549, 323);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(42, 32);
             this.btnBack.TabIndex = 2;
@@ -60,9 +61,11 @@
             // 
             // comboRestaurantList
             // 
+            this.comboRestaurantList.AllowDrop = true;
+            this.comboRestaurantList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboRestaurantList.FormattingEnabled = true;
-            this.comboRestaurantList.Location = new System.Drawing.Point(310, 102);
-            this.comboRestaurantList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboRestaurantList.Location = new System.Drawing.Point(307, 100);
+            this.comboRestaurantList.Margin = new System.Windows.Forms.Padding(2);
             this.comboRestaurantList.Name = "comboRestaurantList";
             this.comboRestaurantList.Size = new System.Drawing.Size(253, 21);
             this.comboRestaurantList.TabIndex = 3;
@@ -79,19 +82,30 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Select restaurant";
             // 
+            // RatingListBox
+            // 
+            this.RatingListBox.FormattingEnabled = true;
+            this.RatingListBox.Location = new System.Drawing.Point(179, 199);
+            this.RatingListBox.Name = "RatingListBox";
+            this.RatingListBox.Size = new System.Drawing.Size(219, 134);
+            this.RatingListBox.TabIndex = 6;
+            this.RatingListBox.SelectedIndexChanged += new System.EventHandler(this.RatingListBox_SelectedIndexChanged);
+            // 
             // ViewRates
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.RatingListBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboRestaurantList);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ViewRates";
             this.Text = "ViewRates";
+            this.Load += new System.EventHandler(this.ViewRates_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -103,5 +117,6 @@
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.ComboBox comboRestaurantList;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ListBox RatingListBox;
     }
 }

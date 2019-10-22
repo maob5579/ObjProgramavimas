@@ -8,14 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SQLite;
+using PrototypeDemo.Models;
 
 namespace PrototypeDemo
 {
     public partial class RatedRest : Form
     {
-        SQLiteCommand sqlCommand;
-        SQLiteDataReader sqlRead;
-        SQLiteDataAdapter sqlDataAdapter;
         public RatedRest()
         {
             InitializeComponent();
@@ -28,20 +26,17 @@ namespace PrototypeDemo
 
         private void RatedRest_Load(object sender, EventArgs e)
         {
-            SQLiteConnection sqlConnection = new SQLiteConnection("Data Source=MoodfullDataBase.sqlite3;Version=3;");
-            string query = "SELECT DISTINCT Name From Restaurant Where Username = @Username ORDER BY Name ASC";
-            sqlConnection.Open();
-            sqlCommand = new SQLiteCommand(query, sqlConnection);
-            sqlCommand.Parameters.AddWithValue("@Username",Account.Username);
+             string query = "SELECT Name, MoodRating, Price, Experience From Restaurant, Evaluation, User WHERE Evaluation.UserId == @User AND User.LoginId = Evaluation.UserId AND Restaurant.RestaurantId = Evaluation.RestaurantId";
+             SQLiteConnection sqlConnection = new SQLiteConnection("Data Source=MoodfullDataBase.sqlite3;Version=3;");
+             sqlConnection.Open();
+             SQLiteCommand sqlCommand = new SQLiteCommand(query, sqlConnection);
+             sqlCommand.Parameters.AddWithValue("@User", Account.LoginId);
+             SQLiteDataAdapter sqlDataAdapter = new SQLiteDataAdapter(sqlCommand);
+             DataTable dataTable = new DataTable();
+             sqlDataAdapter.Fill(dataTable);
 
-            sqlRead = sqlCommand.ExecuteReader();
+             dataGridView1.DataSource = dataTable;
 
-            while (sqlRead.Read())
-            {
-                listBox1.Items.Add(sqlRead[0]);
-            }
-            sqlRead.Close();
-           
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -57,6 +52,11 @@ namespace PrototypeDemo
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

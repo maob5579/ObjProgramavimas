@@ -35,6 +35,13 @@ namespace PrototypeDemo
                 // Gets the mood
                 var mood = await moodDetection.GetEmotions(filePath);
                 SetLabels(mood);
+
+
+                this.Hide();
+                RestRating newWindow = new RestRating(mood.Happiness);
+                newWindow.ShowDialog();
+                this.Close();
+
             }
         }
 
@@ -55,5 +62,6 @@ namespace PrototypeDemo
             sadnessLabel.Text = "Sadness: " + (model.Sadness * 100).ToString() + "%";
             surpirseLabel.Text = "Surprise: " + (model.Surprise * 100).ToString() + "%";
         }
+
     }
 }

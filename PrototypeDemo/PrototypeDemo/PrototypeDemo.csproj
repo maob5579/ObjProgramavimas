@@ -100,6 +100,7 @@
       <DependentUpon>DeleteRestaurant.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\Restaurant.cs" />
     <Compile Include="UserPanel\FavRest.cs">
       <SubType>Form</SubType>
     </Compile>
