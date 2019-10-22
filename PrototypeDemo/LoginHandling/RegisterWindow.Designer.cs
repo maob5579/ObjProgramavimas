@@ -61,26 +61,29 @@
             // 
             // textBox_Username
             // 
-            this.textBox_Username.Location = new System.Drawing.Point(187, 120);
+            this.textBox_Username.Location = new System.Drawing.Point(267, 148);
+            this.textBox_Username.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox_Username.Name = "textBox_Username";
-            this.textBox_Username.Size = new System.Drawing.Size(262, 20);
+            this.textBox_Username.Size = new System.Drawing.Size(348, 22);
             this.textBox_Username.TabIndex = 0;
             this.textBox_Username.TextChanged += new System.EventHandler(this.textBox_Username_TextChanged);
             // 
             // textBox_Password
             // 
-            this.textBox_Password.Location = new System.Drawing.Point(187, 168);
+            this.textBox_Password.Location = new System.Drawing.Point(267, 207);
+            this.textBox_Password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox_Password.Name = "textBox_Password";
             this.textBox_Password.PasswordChar = '*';
-            this.textBox_Password.Size = new System.Drawing.Size(262, 20);
+            this.textBox_Password.Size = new System.Drawing.Size(348, 22);
             this.textBox_Password.TabIndex = 1;
             // 
             // textBox_PasswordComfirm
             // 
-            this.textBox_PasswordComfirm.Location = new System.Drawing.Point(187, 213);
+            this.textBox_PasswordComfirm.Location = new System.Drawing.Point(267, 262);
+            this.textBox_PasswordComfirm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox_PasswordComfirm.Name = "textBox_PasswordComfirm";
             this.textBox_PasswordComfirm.PasswordChar = '*';
-            this.textBox_PasswordComfirm.Size = new System.Drawing.Size(262, 20);
+            this.textBox_PasswordComfirm.Size = new System.Drawing.Size(348, 22);
             this.textBox_PasswordComfirm.TabIndex = 2;
             this.textBox_PasswordComfirm.TextChanged += new System.EventHandler(this.textBox_PasswordComfirm_TextChanged);
             // 
@@ -88,9 +91,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(214, 9);
+            this.label1.Location = new System.Drawing.Point(307, 38);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(203, 55);
+            this.label1.Size = new System.Drawing.Size(253, 69);
             this.label1.TabIndex = 3;
             this.label1.Text = "Register";
             // 
@@ -98,9 +102,10 @@
             // 
             this.label_Username.AutoSize = true;
             this.label_Username.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Username.Location = new System.Drawing.Point(84, 115);
+            this.label_Username.Location = new System.Drawing.Point(130, 142);
+            this.label_Username.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Username.Name = "label_Username";
-            this.label_Username.Size = new System.Drawing.Size(97, 24);
+            this.label_Username.Size = new System.Drawing.Size(124, 29);
             this.label_Username.TabIndex = 4;
             this.label_Username.Text = "Username";
             // 
@@ -109,9 +114,10 @@
             this.label_Password.AutoSize = true;
             this.label_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Password.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label_Password.Location = new System.Drawing.Point(84, 168);
+            this.label_Password.Location = new System.Drawing.Point(130, 207);
+            this.label_Password.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Password.Name = "label_Password";
-            this.label_Password.Size = new System.Drawing.Size(92, 24);
+            this.label_Password.Size = new System.Drawing.Size(120, 29);
             this.label_Password.TabIndex = 5;
             this.label_Password.Text = "Password";
             // 
@@ -120,18 +126,20 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label2.Location = new System.Drawing.Point(15, 209);
+            this.label2.Location = new System.Drawing.Point(38, 257);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(166, 24);
+            this.label2.Size = new System.Drawing.Size(215, 29);
             this.label2.TabIndex = 6;
             this.label2.Text = "Comfirm password";
             // 
             // button_Register
             // 
             this.button_Register.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Register.Location = new System.Drawing.Point(330, 336);
+            this.button_Register.Location = new System.Drawing.Point(458, 414);
+            this.button_Register.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_Register.Name = "button_Register";
-            this.button_Register.Size = new System.Drawing.Size(132, 53);
+            this.button_Register.Size = new System.Drawing.Size(176, 65);
             this.button_Register.TabIndex = 7;
             this.button_Register.Text = "Register";
             this.button_Register.UseVisualStyleBackColor = true;
@@ -140,9 +148,10 @@
             // button_SignIn
             // 
             this.button_SignIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_SignIn.Location = new System.Drawing.Point(180, 336);
+            this.button_SignIn.Location = new System.Drawing.Point(258, 414);
+            this.button_SignIn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_SignIn.Name = "button_SignIn";
-            this.button_SignIn.Size = new System.Drawing.Size(132, 53);
+            this.button_SignIn.Size = new System.Drawing.Size(176, 65);
             this.button_SignIn.TabIndex = 8;
             this.button_SignIn.Text = "Sign in";
             this.button_SignIn.UseVisualStyleBackColor = true;
@@ -152,9 +161,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(75, 251);
+            this.label3.Location = new System.Drawing.Point(118, 309);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 24);
+            this.label3.Size = new System.Drawing.Size(126, 29);
             this.label3.TabIndex = 9;
             this.label3.Text = "First name";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -163,9 +173,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(75, 288);
+            this.label4.Location = new System.Drawing.Point(118, 354);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 24);
+            this.label4.Size = new System.Drawing.Size(123, 29);
             this.label4.TabIndex = 10;
             this.label4.Text = "Last name";
             // 
@@ -174,6 +185,7 @@
             this.bindingNavigator1.AddNewItem = this.bindingNavigatorAddNewItem;
             this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
             this.bindingNavigator1.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.bindingNavigator1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -193,7 +205,7 @@
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(622, 25);
+            this.bindingNavigator1.Size = new System.Drawing.Size(882, 27);
             this.bindingNavigator1.TabIndex = 11;
             this.bindingNavigator1.Text = "bindingNavigator1";
             this.bindingNavigator1.RefreshItems += new System.EventHandler(this.bindingNavigator1_RefreshItems);
@@ -204,13 +216,13 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -220,7 +232,7 @@
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
@@ -229,7 +241,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -238,27 +250,27 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorPositionItem
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(65, 27);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -266,7 +278,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -275,34 +287,36 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // textBox_FirstName
             // 
-            this.textBox_FirstName.Location = new System.Drawing.Point(186, 257);
+            this.textBox_FirstName.Location = new System.Drawing.Point(266, 316);
+            this.textBox_FirstName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox_FirstName.Name = "textBox_FirstName";
-            this.textBox_FirstName.Size = new System.Drawing.Size(262, 20);
+            this.textBox_FirstName.Size = new System.Drawing.Size(348, 22);
             this.textBox_FirstName.TabIndex = 12;
             // 
             // textBox_LastName
             // 
-            this.textBox_LastName.Location = new System.Drawing.Point(186, 295);
+            this.textBox_LastName.Location = new System.Drawing.Point(266, 363);
+            this.textBox_LastName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox_LastName.Name = "textBox_LastName";
-            this.textBox_LastName.Size = new System.Drawing.Size(261, 20);
+            this.textBox_LastName.Size = new System.Drawing.Size(347, 22);
             this.textBox_LastName.TabIndex = 13;
             // 
             // RegisterWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(622, 421);
+            this.ClientSize = new System.Drawing.Size(882, 503);
             this.Controls.Add(this.textBox_LastName);
             this.Controls.Add(this.textBox_FirstName);
             this.Controls.Add(this.bindingNavigator1);
@@ -317,6 +331,7 @@
             this.Controls.Add(this.textBox_PasswordComfirm);
             this.Controls.Add(this.textBox_Password);
             this.Controls.Add(this.textBox_Username);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "RegisterWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
