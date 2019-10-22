@@ -8,13 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SQLite;
+using PrototypeDemo.Models;
 
 namespace PrototypeDemo
 {
     public partial class RestList : Form
     {
-        SQLiteCommand sqlCommand;
-        SQLiteDataReader sqlRead;
+        
         public RestList()
         {
             InitializeComponent();
@@ -27,39 +27,9 @@ namespace PrototypeDemo
 
         private void RestList_Load(object sender, EventArgs e)
         {
-            SQLiteConnection sqlConnection = new SQLiteConnection("Data Source=MoodfullDataBase.sqlite3;Version=3;");
-            string query = "SELECT DISTINCT Name From Restaurant ORDER BY MoodRating DESC";
-            sqlConnection.Open();
-            sqlCommand = new SQLiteCommand(query, sqlConnection);
-            sqlRead = sqlCommand.ExecuteReader();
-
-            while (sqlRead.Read())
-            {
-                listBox1.Items.Add(sqlRead[0]);
-            }
-            sqlRead.Close();
-
-            string query2 = "SELECT DISTINCT Name From Restaurant ORDER BY Price DESC";
-            
-            sqlCommand = new SQLiteCommand(query2, sqlConnection);
-            sqlRead = sqlCommand.ExecuteReader();
-
-            while (sqlRead.Read())
-            {
-                listBox2.Items.Add(sqlRead[0]);
-            }
-            sqlRead.Close();
-
-            string query3 = "SELECT DISTINCT Name From Restaurant ORDER BY Experience DESC";
-            
-            sqlCommand = new SQLiteCommand(query3, sqlConnection);
-            sqlRead = sqlCommand.ExecuteReader();
-
-            while (sqlRead.Read())
-            {
-                listBox3.Items.Add(sqlRead[0]);
-            }
-            sqlRead.Close();
+            FillMoodRating();
+            FillExperienceRating();
+            FillPriceRating();
 
         }
 
@@ -76,6 +46,28 @@ namespace PrototypeDemo
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+        private void FillMoodRating()
+        {
+            
+        }
+        private void FillPriceRating()
+        {
+           
+        }
+        private void FillExperienceRating()
+        {
+            
         }
     }
 }

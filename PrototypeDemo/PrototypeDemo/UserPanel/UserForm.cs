@@ -7,24 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PrototypeDemo.Models;
 
 namespace PrototypeDemo
 {
     public partial class UserForm : Form
     {
-        public UserForm(string name)
+        public UserForm(string name, long loginId)
         {
             InitializeComponent();
             nameBox.Text = name;
             Account.Username = name;
+            Account.LoginId = loginId;
         }
 
         private void btnRateRestaurant_Click(object sender, EventArgs e)
         {
             this.Hide();
-            RestRating newWindow = new RestRating();
+            Form1 newWindow = new Form1();
             newWindow.ShowDialog();
             this.Show();
+            
             /*
             this.Hide();
             Form1 cameraWindow  = new Form1();
@@ -76,5 +79,6 @@ namespace PrototypeDemo
         {
             this.DialogResult = DialogResult.OK;
         }
+
     }
 }

@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace PrototypeDemo.Models
 {
-    public static class Account
+    public static class Restaurant
     {
-        public static string Username { get; set; }
-        public static long LoginId { get; set; }
+        public static string Name { get; set; }
     }
 }
