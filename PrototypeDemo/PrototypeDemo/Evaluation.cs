@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LoginHandling
+namespace PrototypeDemo
 {
     public class Evaluation
     {
@@ -54,15 +54,7 @@ namespace LoginHandling
         
         
 
-        public static void ShowEvaluations ()
-        {
-            List<Evaluation> evaluationList = DataBase.GetEvaluationList();
-            foreach(Evaluation element in evaluationList)
-            {
-                Console.WriteLine("{0} {1} {2} {3} {4} {5}", element.getEvaluationId(), element.getUserId(), element.getRestaurantId(), element.getMoodRating(), element.getPrice(), element.getExperience());
-           
-            }
-        }
+    
         
     }
 }

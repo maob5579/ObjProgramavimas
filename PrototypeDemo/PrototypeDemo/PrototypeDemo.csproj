@@ -99,6 +99,7 @@
     <Compile Include="DeleteRestaurant.Designer.cs">
       <DependentUpon>DeleteRestaurant.cs</DependentUpon>
     </Compile>
+    <Compile Include="Evaluation.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\Restaurant.cs" />
     <Compile Include="UserPanel\FavRest.cs">
