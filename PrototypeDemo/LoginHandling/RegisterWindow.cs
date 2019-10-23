@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SQLite;
+using LoginHandling.Extensions;
 
 namespace LoginHandling
 {
@@ -36,9 +37,9 @@ namespace LoginHandling
             {
                 MessageBox.Show("Passwords do not match");
             }
-            else if (textBox_Password.Text.Length < 7)
+            else if (textBox_Password.Text.Length < 7 && !textBox_Password.Text.ContainsUpperLowerNumber())
             {
-                MessageBox.Show("Password must include atleast 7 characters");
+                MessageBox.Show("Password must include atleast 7 characters and must contain at least one upper, lower case letter and a number");
             }
             else
             {
