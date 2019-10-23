@@ -95,5 +95,15 @@ namespace PrototypeDemo
 
             dataGridView3.DataSource = dataTable;
         }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

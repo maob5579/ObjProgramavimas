@@ -32,7 +32,10 @@
             this.btnBack = new System.Windows.Forms.Button();
             this.comboRestaurantList = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.RatingListBox = new System.Windows.Forms.ListBox();
+            this.listView_Evaluation = new System.Windows.Forms.ListView();
+            this.MoodRating = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Price = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Experience = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // label1
@@ -82,22 +85,45 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Select restaurant";
             // 
-            // RatingListBox
+            // listView_Evaluation
             // 
-            this.RatingListBox.FormattingEnabled = true;
-            this.RatingListBox.Location = new System.Drawing.Point(179, 199);
-            this.RatingListBox.Name = "RatingListBox";
-            this.RatingListBox.Size = new System.Drawing.Size(219, 134);
-            this.RatingListBox.TabIndex = 6;
-            this.RatingListBox.SelectedIndexChanged += new System.EventHandler(this.RatingListBox_SelectedIndexChanged);
+            this.listView_Evaluation.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.MoodRating,
+            this.Price,
+            this.Experience});
+            this.listView_Evaluation.FullRowSelect = true;
+            this.listView_Evaluation.GridLines = true;
+            this.listView_Evaluation.HideSelection = false;
+            this.listView_Evaluation.Location = new System.Drawing.Point(41, 159);
+            this.listView_Evaluation.Name = "listView_Evaluation";
+            this.listView_Evaluation.Size = new System.Drawing.Size(503, 195);
+            this.listView_Evaluation.TabIndex = 5;
+            this.listView_Evaluation.UseCompatibleStateImageBehavior = false;
+            this.listView_Evaluation.View = System.Windows.Forms.View.Details;
+            this.listView_Evaluation.SelectedIndexChanged += new System.EventHandler(this.listView_Evaluation_SelectedIndexChanged);
+            // 
+            // MoodRating
+            // 
+            this.MoodRating.Text = "MoodRating";
+            this.MoodRating.Width = 184;
+            // 
+            // Price
+            // 
+            this.Price.Text = "Price";
+            this.Price.Width = 140;
+            // 
+            // Experience
+            // 
+            this.Experience.Text = "Experience";
+            this.Experience.Width = 169;
             // 
             // ViewRates
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(600, 366);
-            this.Controls.Add(this.RatingListBox);
+            this.ClientSize = new System.Drawing.Size(609, 371);
+            this.Controls.Add(this.listView_Evaluation);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboRestaurantList);
             this.Controls.Add(this.btnBack);
@@ -117,6 +143,9 @@
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.ComboBox comboRestaurantList;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ListBox RatingListBox;
+        private System.Windows.Forms.ListView listView_Evaluation;
+        private System.Windows.Forms.ColumnHeader MoodRating;
+        private System.Windows.Forms.ColumnHeader Price;
+        private System.Windows.Forms.ColumnHeader Experience;
     }
 }
