@@ -38,20 +38,19 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(161, 19);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(240, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(292, 46);
+            this.label1.Size = new System.Drawing.Size(362, 58);
             this.label1.TabIndex = 2;
             this.label1.Text = "Owner\'s Panel";
             // 
             // btnViewRatings
             // 
             this.btnViewRatings.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewRatings.Location = new System.Drawing.Point(191, 98);
-            this.btnViewRatings.Margin = new System.Windows.Forms.Padding(2);
+            this.btnViewRatings.Location = new System.Drawing.Point(280, 129);
+            this.btnViewRatings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnViewRatings.Name = "btnViewRatings";
-            this.btnViewRatings.Size = new System.Drawing.Size(216, 65);
+            this.btnViewRatings.Size = new System.Drawing.Size(288, 80);
             this.btnViewRatings.TabIndex = 3;
             this.btnViewRatings.Text = "View restaurants\' ratings";
             this.btnViewRatings.UseVisualStyleBackColor = true;
@@ -60,10 +59,10 @@
             // btnAddRestaurant
             // 
             this.btnAddRestaurant.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddRestaurant.Location = new System.Drawing.Point(191, 191);
-            this.btnAddRestaurant.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddRestaurant.Location = new System.Drawing.Point(280, 243);
+            this.btnAddRestaurant.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddRestaurant.Name = "btnAddRestaurant";
-            this.btnAddRestaurant.Size = new System.Drawing.Size(216, 55);
+            this.btnAddRestaurant.Size = new System.Drawing.Size(288, 68);
             this.btnAddRestaurant.TabIndex = 4;
             this.btnAddRestaurant.Text = "Add restaurant";
             this.btnAddRestaurant.UseVisualStyleBackColor = true;
@@ -72,10 +71,10 @@
             // btnDeleteRestaurant
             // 
             this.btnDeleteRestaurant.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteRestaurant.Location = new System.Drawing.Point(191, 269);
-            this.btnDeleteRestaurant.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDeleteRestaurant.Location = new System.Drawing.Point(280, 339);
+            this.btnDeleteRestaurant.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDeleteRestaurant.Name = "btnDeleteRestaurant";
-            this.btnDeleteRestaurant.Size = new System.Drawing.Size(216, 55);
+            this.btnDeleteRestaurant.Size = new System.Drawing.Size(288, 68);
             this.btnDeleteRestaurant.TabIndex = 5;
             this.btnDeleteRestaurant.Text = "Delete restaurant";
             this.btnDeleteRestaurant.UseVisualStyleBackColor = true;
@@ -83,16 +82,17 @@
             // 
             // OwnerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(882, 503);
             this.Controls.Add(this.btnDeleteRestaurant);
             this.Controls.Add(this.btnAddRestaurant);
             this.Controls.Add(this.btnViewRatings);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "OwnerForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OwnerForm";
             this.Load += new System.EventHandler(this.OwnerForm_Load);
             this.ResumeLayout(false);

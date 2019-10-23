@@ -26,7 +26,7 @@ namespace PrototypeDemo
 
         private void RatedRest_Load(object sender, EventArgs e)
         {
-             string query = "SELECT Name, MoodRating, Price, Experience From Restaurant, Evaluation, User WHERE Evaluation.UserId == @User AND User.LoginId = Evaluation.UserId AND Restaurant.RestaurantId = Evaluation.RestaurantId";
+             string query = "SELECT Name, ROUND(MoodRating,2) AS MoodRating, Price, Experience From Restaurant, Evaluation, User WHERE Evaluation.UserId == @User AND User.LoginId = Evaluation.UserId AND Restaurant.RestaurantId = Evaluation.RestaurantId";
              SQLiteConnection sqlConnection = new SQLiteConnection("Data Source=MoodfullDataBase.sqlite3;Version=3;");
              sqlConnection.Open();
              SQLiteCommand sqlCommand = new SQLiteCommand(query, sqlConnection);

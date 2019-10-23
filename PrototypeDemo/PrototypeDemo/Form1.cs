@@ -63,5 +63,9 @@ namespace PrototypeDemo
             surpirseLabel.Text = "Surprise: " + (model.Surprise * 100).ToString() + "%";
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

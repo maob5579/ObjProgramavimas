@@ -41,40 +41,38 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(176, 17);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(235, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(288, 46);
+            this.label1.Size = new System.Drawing.Size(356, 58);
             this.label1.TabIndex = 0;
             this.label1.Text = "Admin\'s Panel";
             // 
             // comboRestaurantList
             // 
             this.comboRestaurantList.FormattingEnabled = true;
-            this.comboRestaurantList.Location = new System.Drawing.Point(299, 99);
-            this.comboRestaurantList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboRestaurantList.Location = new System.Drawing.Point(428, 125);
+            this.comboRestaurantList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboRestaurantList.Name = "comboRestaurantList";
-            this.comboRestaurantList.Size = new System.Drawing.Size(280, 21);
+            this.comboRestaurantList.Size = new System.Drawing.Size(372, 24);
             this.comboRestaurantList.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(28, 87);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(66, 110);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(220, 31);
+            this.label2.Size = new System.Drawing.Size(264, 38);
             this.label2.TabIndex = 2;
             this.label2.Text = "Select restaurant";
             // 
             // btnManageRatings
             // 
             this.btnManageRatings.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManageRatings.Location = new System.Drawing.Point(8, 260);
-            this.btnManageRatings.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnManageRatings.Location = new System.Drawing.Point(40, 323);
+            this.btnManageRatings.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnManageRatings.Name = "btnManageRatings";
-            this.btnManageRatings.Size = new System.Drawing.Size(131, 75);
+            this.btnManageRatings.Size = new System.Drawing.Size(175, 92);
             this.btnManageRatings.TabIndex = 3;
             this.btnManageRatings.Text = "Manage ratings";
             this.btnManageRatings.UseVisualStyleBackColor = true;
@@ -83,10 +81,10 @@
             // btnChangeRestAddress
             // 
             this.btnChangeRestAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChangeRestAddress.Location = new System.Drawing.Point(308, 260);
-            this.btnChangeRestAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnChangeRestAddress.Location = new System.Drawing.Point(440, 323);
+            this.btnChangeRestAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnChangeRestAddress.Name = "btnChangeRestAddress";
-            this.btnChangeRestAddress.Size = new System.Drawing.Size(131, 75);
+            this.btnChangeRestAddress.Size = new System.Drawing.Size(175, 92);
             this.btnChangeRestAddress.TabIndex = 4;
             this.btnChangeRestAddress.Text = "Change address";
             this.btnChangeRestAddress.UseVisualStyleBackColor = true;
@@ -95,10 +93,10 @@
             // btnChangeRestName
             // 
             this.btnChangeRestName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChangeRestName.Location = new System.Drawing.Point(158, 260);
-            this.btnChangeRestName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnChangeRestName.Location = new System.Drawing.Point(240, 323);
+            this.btnChangeRestName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnChangeRestName.Name = "btnChangeRestName";
-            this.btnChangeRestName.Size = new System.Drawing.Size(131, 75);
+            this.btnChangeRestName.Size = new System.Drawing.Size(175, 92);
             this.btnChangeRestName.TabIndex = 5;
             this.btnChangeRestName.Text = "Change name";
             this.btnChangeRestName.UseVisualStyleBackColor = true;
@@ -107,10 +105,10 @@
             // btnDeleteRestaurant
             // 
             this.btnDeleteRestaurant.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteRestaurant.Location = new System.Drawing.Point(458, 260);
-            this.btnDeleteRestaurant.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDeleteRestaurant.Location = new System.Drawing.Point(640, 323);
+            this.btnDeleteRestaurant.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDeleteRestaurant.Name = "btnDeleteRestaurant";
-            this.btnDeleteRestaurant.Size = new System.Drawing.Size(131, 75);
+            this.btnDeleteRestaurant.Size = new System.Drawing.Size(175, 92);
             this.btnDeleteRestaurant.TabIndex = 6;
             this.btnDeleteRestaurant.Text = "Delete restaurant";
             this.btnDeleteRestaurant.UseVisualStyleBackColor = true;
@@ -118,10 +116,10 @@
             // 
             // AdminForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(882, 503);
             this.Controls.Add(this.btnDeleteRestaurant);
             this.Controls.Add(this.btnChangeRestName);
             this.Controls.Add(this.btnChangeRestAddress);
@@ -129,8 +127,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboRestaurantList);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AdminForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminForm";
             this.ResumeLayout(false);
             this.PerformLayout();

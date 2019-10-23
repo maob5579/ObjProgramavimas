@@ -17,8 +17,7 @@ namespace LoginHandling
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new StartWindow());
-            //Evaluation.ShowEvaluations();
-            //DataBase.GetRestaurantID("Telegrafas");
+
             
             
            

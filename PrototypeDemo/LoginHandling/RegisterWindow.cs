@@ -42,7 +42,7 @@ namespace LoginHandling
             }
             else
             {
-                string query = "INSERT into User (Username,Password,FirstName,LastName,UserType) values(@Username,@Password,@FirstName,@LastName,3);";
+                string query = "INSERT into User (Username,Password,FirstName,LastName,UserType) values(@Username,@Password,@FirstName,@LastName,0);";
               
                 SQLiteConnection sqlConnection = new SQLiteConnection("Data Source=MoodfullDataBase.sqlite3;Version=3;");
                 sqlConnection.Open();
@@ -56,10 +56,14 @@ namespace LoginHandling
                     sqlCommand.ExecuteNonQuery();
                     sqlConnection.Close();
 
+                    MessageBox.Show("Registracija atlikta sekmingai");
+                    button_SignIn.PerformClick();
+
                 }
                 else
                 {
                     MessageBox.Show("This username already exists");
+                    return;
                 }
 
 
@@ -104,6 +108,11 @@ namespace LoginHandling
         }
 
         private void textBox_PasswordComfirm_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RegisterWindow_Load(object sender, EventArgs e)
         {
 
         }

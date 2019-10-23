@@ -44,20 +44,18 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PrototypeDemo.Properties.Resources.how_to_be_happy;
-            this.pictureBox1.Location = new System.Drawing.Point(95, 27);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(71, 22);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(559, 337);
+            this.pictureBox1.Size = new System.Drawing.Size(419, 274);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // btnMeasure
             // 
-            this.btnMeasure.Location = new System.Drawing.Point(332, 396);
-            this.btnMeasure.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMeasure.Location = new System.Drawing.Point(249, 322);
             this.btnMeasure.Name = "btnMeasure";
-            this.btnMeasure.Size = new System.Drawing.Size(155, 47);
+            this.btnMeasure.Size = new System.Drawing.Size(116, 38);
             this.btnMeasure.TabIndex = 1;
             this.btnMeasure.Text = "Measure mod";
             this.btnMeasure.UseVisualStyleBackColor = true;
@@ -66,81 +64,89 @@
             // angerLabel
             // 
             this.angerLabel.AutoSize = true;
-            this.angerLabel.Location = new System.Drawing.Point(699, 81);
+            this.angerLabel.Location = new System.Drawing.Point(524, 66);
+            this.angerLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.angerLabel.Name = "angerLabel";
-            this.angerLabel.Size = new System.Drawing.Size(54, 17);
+            this.angerLabel.Size = new System.Drawing.Size(41, 13);
             this.angerLabel.TabIndex = 2;
             this.angerLabel.Text = "Anger: ";
             // 
             // contemptLabel
             // 
             this.contemptLabel.AutoSize = true;
-            this.contemptLabel.Location = new System.Drawing.Point(677, 110);
+            this.contemptLabel.Location = new System.Drawing.Point(508, 89);
+            this.contemptLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.contemptLabel.Name = "contemptLabel";
-            this.contemptLabel.Size = new System.Drawing.Size(76, 17);
+            this.contemptLabel.Size = new System.Drawing.Size(58, 13);
             this.contemptLabel.TabIndex = 3;
             this.contemptLabel.Text = "Contempt: ";
             // 
             // disgustLabel
             // 
             this.disgustLabel.AutoSize = true;
-            this.disgustLabel.Location = new System.Drawing.Point(691, 140);
+            this.disgustLabel.Location = new System.Drawing.Point(518, 114);
+            this.disgustLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.disgustLabel.Name = "disgustLabel";
-            this.disgustLabel.Size = new System.Drawing.Size(63, 17);
+            this.disgustLabel.Size = new System.Drawing.Size(48, 13);
             this.disgustLabel.TabIndex = 4;
             this.disgustLabel.Text = "Disgust: ";
             // 
             // fearLabel
             // 
             this.fearLabel.AutoSize = true;
-            this.fearLabel.Location = new System.Drawing.Point(709, 172);
+            this.fearLabel.Location = new System.Drawing.Point(532, 140);
+            this.fearLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.fearLabel.Name = "fearLabel";
-            this.fearLabel.Size = new System.Drawing.Size(45, 17);
+            this.fearLabel.Size = new System.Drawing.Size(34, 13);
             this.fearLabel.TabIndex = 5;
             this.fearLabel.Text = "Fear: ";
             // 
             // happinessLabel
             // 
             this.happinessLabel.AutoSize = true;
-            this.happinessLabel.Location = new System.Drawing.Point(671, 201);
+            this.happinessLabel.Location = new System.Drawing.Point(503, 163);
+            this.happinessLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.happinessLabel.Name = "happinessLabel";
-            this.happinessLabel.Size = new System.Drawing.Size(83, 17);
+            this.happinessLabel.Size = new System.Drawing.Size(63, 13);
             this.happinessLabel.TabIndex = 6;
             this.happinessLabel.Text = "Happiness: ";
             // 
             // neutralLabel
             // 
             this.neutralLabel.AutoSize = true;
-            this.neutralLabel.Location = new System.Drawing.Point(691, 231);
+            this.neutralLabel.Location = new System.Drawing.Point(518, 188);
+            this.neutralLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.neutralLabel.Name = "neutralLabel";
-            this.neutralLabel.Size = new System.Drawing.Size(62, 17);
+            this.neutralLabel.Size = new System.Drawing.Size(47, 13);
             this.neutralLabel.TabIndex = 7;
             this.neutralLabel.Text = "Neutral: ";
             // 
             // sadnessLabel
             // 
             this.sadnessLabel.AutoSize = true;
-            this.sadnessLabel.Location = new System.Drawing.Point(683, 264);
+            this.sadnessLabel.Location = new System.Drawing.Point(512, 214);
+            this.sadnessLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.sadnessLabel.Name = "sadnessLabel";
-            this.sadnessLabel.Size = new System.Drawing.Size(71, 17);
+            this.sadnessLabel.Size = new System.Drawing.Size(54, 13);
             this.sadnessLabel.TabIndex = 8;
             this.sadnessLabel.Text = "Sadness: ";
             // 
             // surpirseLabel
             // 
             this.surpirseLabel.AutoSize = true;
-            this.surpirseLabel.Location = new System.Drawing.Point(684, 297);
+            this.surpirseLabel.Location = new System.Drawing.Point(513, 241);
+            this.surpirseLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.surpirseLabel.Name = "surpirseLabel";
-            this.surpirseLabel.Size = new System.Drawing.Size(69, 17);
+            this.surpirseLabel.Size = new System.Drawing.Size(51, 13);
             this.surpirseLabel.TabIndex = 9;
             this.surpirseLabel.Text = "Surprise: ";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(882, 503);
+            this.ClientSize = new System.Drawing.Size(662, 409);
             this.Controls.Add(this.surpirseLabel);
             this.Controls.Add(this.sadnessLabel);
             this.Controls.Add(this.neutralLabel);
@@ -151,10 +157,10 @@
             this.Controls.Add(this.angerLabel);
             this.Controls.Add(this.btnMeasure);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
