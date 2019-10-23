@@ -85,7 +85,6 @@
             // 
             // listView_Evaluation
             // 
-<<<<<<< HEAD
             this.listView_Evaluation.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.MoodRating,
             this.Price,
@@ -93,9 +92,9 @@
             this.listView_Evaluation.FullRowSelect = true;
             this.listView_Evaluation.GridLines = true;
             this.listView_Evaluation.HideSelection = false;
-            this.listView_Evaluation.Location = new System.Drawing.Point(41, 159);
+            this.listView_Evaluation.Location = new System.Drawing.Point(77, 173);
             this.listView_Evaluation.Name = "listView_Evaluation";
-            this.listView_Evaluation.Size = new System.Drawing.Size(503, 195);
+            this.listView_Evaluation.Size = new System.Drawing.Size(662, 257);
             this.listView_Evaluation.TabIndex = 5;
             this.listView_Evaluation.UseCompatibleStateImageBehavior = false;
             this.listView_Evaluation.View = System.Windows.Forms.View.Details;
@@ -115,29 +114,14 @@
             // 
             this.Experience.Text = "Experience";
             this.Experience.Width = 169;
-=======
-            this.RatingListBox.FormattingEnabled = true;
-            this.RatingListBox.ItemHeight = 16;
-            this.RatingListBox.Location = new System.Drawing.Point(252, 250);
-            this.RatingListBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.RatingListBox.Name = "RatingListBox";
-            this.RatingListBox.Size = new System.Drawing.Size(291, 164);
-            this.RatingListBox.TabIndex = 6;
-            this.RatingListBox.SelectedIndexChanged += new System.EventHandler(this.RatingListBox_SelectedIndexChanged);
->>>>>>> 4b6a960bf4287f6120459ae5c3f0abbab9efa8b4
             // 
             // ViewRates
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(609, 371);
-            this.Controls.Add(this.listView_Evaluation);
-=======
             this.ClientSize = new System.Drawing.Size(882, 503);
-            this.Controls.Add(this.RatingListBox);
->>>>>>> 4b6a960bf4287f6120459ae5c3f0abbab9efa8b4
+            this.Controls.Add(this.listView_Evaluation);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboRestaurantList);
             this.Controls.Add(this.btnBack);

@@ -144,8 +144,6 @@ namespace PrototypeDemo
         {
             SQLiteConnection sqlConnection = new SQLiteConnection("Data Source=MoodfullDataBase.sqlite3;Version=3;");
             SQLiteCommand sqlCommand;
-            SQLiteDataAdapter sqlDataAdapter;
-            DataTable dataTable;
             SQLiteDataReader dataReader;
             List<Evaluation> evaluationList = new List<Evaluation>();
             sqlConnection.Open();
