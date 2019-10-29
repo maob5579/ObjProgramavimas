@@ -14,8 +14,6 @@ namespace LoginHandling
 
         public LoginDatabase()
         {
-
-
             if (!File.Exists("./MoodfullDataBase.sqlite3"))
             {
                 dataBaseConnection = new SQLiteConnection("Data Source = MoodfullDataBase.sqlite3");
