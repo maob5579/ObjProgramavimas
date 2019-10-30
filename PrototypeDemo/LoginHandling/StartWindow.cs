@@ -28,6 +28,8 @@ namespace LoginHandling
         {
             sqlConnection = new SQLiteConnection("Data Source=MoodfullDataBase.sqlite3;Version=3;");
 
+            MessageBox.Show(DataBase.GetUserID("admin").ToString());
+
         }
 
         private void StartWindow_FormClosing(object sender, FormClosingEventArgs e)

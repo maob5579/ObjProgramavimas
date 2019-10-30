@@ -10,8 +10,8 @@ using System.Data;
 namespace LoginHandling
 {
 
-    static class DataBase
-    { 
+    public static class DataBase
+    {
 
 
         private static SQLiteConnection sqlConnection = new SQLiteConnection("Data Source=MoodfullDataBase.sqlite3;Version=3;");
@@ -44,18 +44,17 @@ namespace LoginHandling
         public static int GetUserID(string userName, string password = null)
         {
 
-
             sqlConnection.Open();
             int ID;
             string query = string.Empty;
             if (password != null)
             {
-                query = "SELECT UserType FROM User WHERE Username == @Username AND Password == @Password";
+                query = "SELECT UserType FROM User WHERE Username == @Username AND Password == @Password ORDER BY Username";
 
             }
             else
             {
-                query = "SELECT UserType FROM User WHERE Username == @Username";
+                query = "SELECT UserType FROM User WHERE Username == @Username ORDER BY Username";
             }
 
             if (query == string.Empty)
@@ -96,8 +95,8 @@ namespace LoginHandling
                 while (dataReader.Read())
                 {
 
-                    evaluationList.Add(new Evaluation(dataReader.GetInt32(0), dataReader.GetInt32(1), dataReader.GetInt32(2), dataReader.GetDouble(3),dataReader.GetInt32(4),dataReader.GetInt32(5)));
-                    
+                    evaluationList.Add(new Evaluation(dataReader.GetInt32(0), dataReader.GetInt32(1), dataReader.GetInt32(2), dataReader.GetDouble(3), dataReader.GetInt32(4), dataReader.GetInt32(5)));
+
 
                 }
             }
@@ -108,7 +107,7 @@ namespace LoginHandling
 
 
         public static string GetRestauranName(int ID)
-        {   
+        {
             sqlConnection.Open();
             string restaurantName;
             string query = "SELECT Name FROM Restaurant WHERE RestaurantId == @RestaurantId";
@@ -133,7 +132,7 @@ namespace LoginHandling
 
         public static int GetRestaurantID(string name)
         {
-            
+
             DataTable dataTable;
             sqlConnection.Open();
             int restaurantId;
@@ -156,9 +155,6 @@ namespace LoginHandling
             Console.WriteLine(restaurantId);
             return restaurantId;
         }
-
-
-
 
     }
 }
