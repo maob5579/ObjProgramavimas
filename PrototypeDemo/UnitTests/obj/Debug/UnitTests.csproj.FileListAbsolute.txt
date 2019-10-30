@@ -21,3 +21,31 @@ C:\Users\Mantas\Desktop\projektasObjektinio\PrototypeDemo\UnitTests\bin\Debug\Ne
 C:\Users\Mantas\Desktop\projektasObjektinio\PrototypeDemo\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
 C:\Users\Mantas\Desktop\projektasObjektinio\PrototypeDemo\UnitTests\obj\Debug\UnitTests.dll
 C:\Users\Mantas\Desktop\projektasObjektinio\PrototypeDemo\UnitTests\obj\Debug\UnitTests.pdb
+E:\Visual Studio projects\11moodfood\PrototypeDemo\UnitTests\bin\Debug\bin\Debug\MoodfullDataBase.sqlite3
+E:\Visual Studio projects\11moodfood\PrototypeDemo\UnitTests\bin\Debug\x86\sqlite3.dll
+E:\Visual Studio projects\11moodfood\PrototypeDemo\UnitTests\bin\Debug\x64\sqlite3.dll
+E:\Visual Studio projects\11moodfood\PrototypeDemo\UnitTests\bin\Debug\UnitTests.dll
+E:\Visual Studio projects\11moodfood\PrototypeDemo\UnitTests\bin\Debug\UnitTests.pdb
+E:\Visual Studio projects\11moodfood\PrototypeDemo\UnitTests\bin\Debug\LoginHandling.exe
+E:\Visual Studio projects\11moodfood\PrototypeDemo\UnitTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\Visual Studio projects\11moodfood\PrototypeDemo\UnitTests\bin\Debug\System.Data.SQLite.dll
+E:\Visual Studio projects\11moodfood\PrototypeDemo\UnitTests\bin\Debug\PrototypeDemo.exe
+E:\Visual Studio projects\11moodfood\PrototypeDemo\UnitTests\bin\Debug\OpenCvSharp.dll
+E:\Visual Studio projects\11moodfood\PrototypeDemo\UnitTests\bin\Debug\OpenCvSharp.Extensions.dll
+E:\Visual Studio projects\11moodfood\PrototypeDemo\UnitTests\bin\Debug\Newtonsoft.Json.dll
+E:\Visual Studio projects\11moodfood\PrototypeDemo\UnitTests\bin\Debug\LoginHandling.pdb
+E:\Visual Studio projects\11moodfood\PrototypeDemo\UnitTests\bin\Debug\LoginHandling.exe.config
+E:\Visual Studio projects\11moodfood\PrototypeDemo\UnitTests\bin\Debug\System.Data.SQLite.xml
+E:\Visual Studio projects\11moodfood\PrototypeDemo\UnitTests\bin\Debug\System.Data.SQLite.dll.config
+E:\Visual Studio projects\11moodfood\PrototypeDemo\UnitTests\bin\Debug\PrototypeDemo.pdb
+E:\Visual Studio projects\11moodfood\PrototypeDemo\UnitTests\bin\Debug\PrototypeDemo.exe.config
+E:\Visual Studio projects\11moodfood\PrototypeDemo\UnitTests\bin\Debug\OpenCvSharp.pdb
+E:\Visual Studio projects\11moodfood\PrototypeDemo\UnitTests\bin\Debug\OpenCvSharp.xml
+E:\Visual Studio projects\11moodfood\PrototypeDemo\UnitTests\bin\Debug\OpenCvSharp.Extensions.pdb
+E:\Visual Studio projects\11moodfood\PrototypeDemo\UnitTests\bin\Debug\OpenCvSharp.Extensions.xml
+E:\Visual Studio projects\11moodfood\PrototypeDemo\UnitTests\bin\Debug\Newtonsoft.Json.xml
+E:\Visual Studio projects\11moodfood\PrototypeDemo\UnitTests\obj\Debug\UnitTests.csprojAssemblyReference.cache
+E:\Visual Studio projects\11moodfood\PrototypeDemo\UnitTests\obj\Debug\UnitTests.csproj.CoreCompileInputs.cache
+E:\Visual Studio projects\11moodfood\PrototypeDemo\UnitTests\obj\Debug\UnitTests.csproj.CopyComplete
+E:\Visual Studio projects\11moodfood\PrototypeDemo\UnitTests\obj\Debug\UnitTests.dll
+E:\Visual Studio projects\11moodfood\PrototypeDemo\UnitTests\obj\Debug\UnitTests.pdb
