@@ -10,7 +10,7 @@ namespace MoodFull
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
     public class LoginActivity : AppCompatActivity
     {
-        Button _button;
+        private Button _button;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {

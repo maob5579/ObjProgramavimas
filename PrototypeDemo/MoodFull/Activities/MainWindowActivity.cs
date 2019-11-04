@@ -22,6 +22,7 @@ namespace MoodFull.Activities
         private DrawerLayout _drawer;
         private ListView _drawerList;
 
+        //Navigation menu items
         private static readonly string[] Sections = new[]
         {
             "Rate restaurant", "Rated restaurants"
@@ -38,8 +39,10 @@ namespace MoodFull.Activities
             _drawerList.Adapter = new ArrayAdapter<string>(this, Resource.Layout.item_menu, Sections);
             _drawerList.ItemClick += DrawerListOnItemClick;
 
+             Permission.TryToGetCameraPermissions(this);
         }
 
+        //When item on navigation menu is clicked
         private void DrawerListOnItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
             Android.Support.V4.App.Fragment fragment = null;

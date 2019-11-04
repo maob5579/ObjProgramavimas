@@ -60,6 +60,7 @@
     <Compile Include="Activities\MainWindowActivity.cs" />
     <Compile Include="Fragments\RatedRestaurantsFragment.cs" />
     <Compile Include="Fragments\RateFragment.cs" />
+    <Compile Include="Permission.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
