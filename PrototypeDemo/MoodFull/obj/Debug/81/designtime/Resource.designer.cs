@@ -2405,6 +2405,9 @@ namespace MoodFull
 			// aapt resource value: 0x7F0C0021
 			public const int contentPanel = 2131492897;
 			
+			// aapt resource value: 0x7F020003
+			public const int content_frame = 2130837507;
+			
 			// aapt resource value: 0x7F0C0022
 			public const int coordinator = 2131492898;
 			
@@ -2434,6 +2437,9 @@ namespace MoodFull
 			
 			// aapt resource value: 0x7F0C002B
 			public const int design_navigation_view = 2131492907;
+			
+			// aapt resource value: 0x7F020002
+			public const int drawer_layout = 2130837506;
 			
 			// aapt resource value: 0x7F0C002C
 			public const int edit_query = 2131492908;
@@ -2489,6 +2495,9 @@ namespace MoodFull
 			// aapt resource value: 0x7F0C003D
 			public const int left = 2131492925;
 			
+			// aapt resource value: 0x7F020004
+			public const int left_drawer = 2130837508;
+			
 			// aapt resource value: 0x7F0C000E
 			public const int line1 = 2131492878;
 			
@@ -2501,8 +2510,8 @@ namespace MoodFull
 			// aapt resource value: 0x7F0C0041
 			public const int list_item = 2131492929;
 			
-			// aapt resource value: 0x7F020004
-			public const int loginButton = 2130837508;
+			// aapt resource value: 0x7F020007
+			public const int loginButton = 2130837511;
 			
 			// aapt resource value: 0x7F0C0042
 			public const int masked = 2131492930;
@@ -2546,8 +2555,8 @@ namespace MoodFull
 			// aapt resource value: 0x7F0C004F
 			public const int parent_matrix = 2131492943;
 			
-			// aapt resource value: 0x7F020003
-			public const int paswordEditText = 2130837507;
+			// aapt resource value: 0x7F020006
+			public const int paswordEditText = 2130837510;
 			
 			// aapt resource value: 0x7F0C0050
 			public const int pin = 2131492944;
@@ -2735,8 +2744,8 @@ namespace MoodFull
 			// aapt resource value: 0x7F0C008D
 			public const int up = 2131493005;
 			
-			// aapt resource value: 0x7F020002
-			public const int usernameEditText = 2130837506;
+			// aapt resource value: 0x7F020005
+			public const int usernameEditText = 2130837509;
 			
 			// aapt resource value: 0x7F0C008E
 			public const int view_offset_helper = 2131493006;
@@ -2884,6 +2893,9 @@ namespace MoodFull
 			// aapt resource value: 0x7F010002
 			public const int activity_main = 2130771970;
 			
+			// aapt resource value: 0x7F010003
+			public const int content_main = 2130771971;
+			
 			// aapt resource value: 0x7F0F001B
 			public const int design_bottom_navigation_item = 2131689499;
 			
@@ -2926,8 +2938,17 @@ namespace MoodFull
 			// aapt resource value: 0x7F0F0028
 			public const int design_text_input_password_icon = 2131689512;
 			
-			// aapt resource value: 0x7F010003
-			public const int login = 2130771971;
+			// aapt resource value: 0x7F010004
+			public const int fragment_rate = 2130771972;
+			
+			// aapt resource value: 0x7F010005
+			public const int fragment_rated_restaurants = 2130771973;
+			
+			// aapt resource value: 0x7F010006
+			public const int item_menu = 2130771974;
+			
+			// aapt resource value: 0x7F010007
+			public const int login = 2130771975;
 			
 			// aapt resource value: 0x7F0F0001
 			public const int notification_action = 2131689473;
